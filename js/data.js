@@ -235,6 +235,97 @@ const GAMES = [
   },
 
   {
+    id: "devil-may-cry-4-special-edition",
+    titulo: "Devil May Cry 4: Special Edition",
+    saga: "Devil May Cry",
+    anio: 2008,
+    plataformas: "PS3 (2008) · PS4 · Xbox 360/One · Switch · PC (Special Edition, 2015)",
+    horasPlatino: 95,
+    dificultad: 8,
+    color: "#2c3e6b",
+    resumen:
+      "Nero, miembro de la Orden de la Espada, persigue a Dante tras el asesinato del Papa Sanctus, en una campaña que recorre dos veces los mismos escenarios: primero con Nero y después con Dante en sentido inverso. La Special Edition añade a Vergil, Trish y Lady como personajes jugables completos, cada uno con su propio final y su propio Palacio Sangriento. Es el platino más largo de toda la saga: exige superar las siete dificultades del juego, sacar rango S en casi todas ellas, derrotar a los siete jefes con rango SSS y completar el Palacio Sangriento de 101 niveles con los cinco personajes, uno de ellos en menos de 2 horas y sin recibir daño en el tramo final.",
+    perdibles: [
+      {
+        nombre: "Eficiente",
+        razon:
+          "El Palacio Sangriento no se puede guardar a mitad de partida: hay que completar sus 101 niveles en una sola sesión seguida en menos de 2 horas. Si se acaba el tiempo o mueres, hay que reiniciar la carrera entera desde el nivel 1.",
+      },
+      {
+        nombre: "Intrépido",
+        razon:
+          "Igual que el resto de trofeos del Palacio Sangriento, exige acabar los 101 niveles en una única sesión sin guardar, esta vez con el modo Turbo activado. Cualquier muerte a mitad de camino obliga a reiniciar todo el recorrido desde cero.",
+      },
+      {
+        nombre: "El rey del palacio",
+        razon:
+          "Pide sacar rango de estilo S en cada uno de los 101 niveles del Palacio Sangriento dentro de la misma sesión seguida. Bajar de S en un solo nivel arruina la racha y obliga a reiniciar el Palacio Sangriento completo.",
+      },
+      {
+        nombre: "Intocable",
+        razon:
+          "Solo se puede intentar en el último nivel del Palacio Sangriento, al enfrentarte a Dante, y hay que llegar hasta ahí sin haber guardado por el camino. Si recibes daño en ese combate (o mueres antes en el recorrido), tienes que reiniciar los 101 niveles desde el principio.",
+      },
+    ],
+    trofeos: [
+      { tier: "platino", nombre: "Los diablos nunca lloran", desc: "Consigue todos los trofeos." },
+
+      { tier: "bronce", nombre: "Despacito y buena letra", desc: "Completa todas las misiones en el modo Humano." },
+      { tier: "bronce", nombre: "¡Hecho!", desc: "Completa todas las misiones en el modo Cazademonios." },
+      { tier: "bronce", nombre: "De chupado, nada", desc: "Completa todas las misiones en el modo Hijo de Sparda." },
+      { tier: "bronce", nombre: "Todos se inclinan ante ti", desc: "Completa todas las misiones en el modo Dante debe morir." },
+      { tier: "bronce", nombre: "Abraza la luz", desc: "Completa todas las misiones en el modo Cielo o Infierno." },
+      { tier: "bronce", nombre: "Cena en el infierno", desc: "Completa todas las misiones en el modo Doble Infierno." },
+      { tier: "oro", nombre: "Un trono de gloria", desc: "Completa todos los modos de juego." },
+
+      { tier: "bronce", nombre: "Entre los mejores", desc: "Completa todas las misiones en el modo Humano con el nivel de estilo S." },
+      { tier: "bronce", nombre: "Un paso por delante", desc: "Completa todas las misiones en el modo Cazademonios con el nivel de estilo S." },
+      { tier: "bronce", nombre: "Una hazaña asombrosa", desc: "Completa todas las misiones en el modo Hijo de Sparda con el nivel de estilo S." },
+      { tier: "plata", nombre: "Nunca te rindas", desc: "Completa todas las misiones en el modo Dante debe morir con el nivel de estilo S." },
+      { tier: "bronce", nombre: "Sin dejar nada en el tintero", desc: "Completa todas las misiones secretas." },
+
+      { tier: "plata", nombre: "Coleccionista de dest.: Nero", desc: "Adquiere todas las destrezas de Nero." },
+      { tier: "plata", nombre: "Coleccionista de dest.: Dante", desc: "Adquiere todas las destrezas de Dante." },
+
+      { tier: "oro", nombre: "El rey del palacio", desc: "Completa todo el modo Palacio Sangriento con el nivel de estilo S." },
+
+      { tier: "bronce", nombre: "Cazademonios novato", desc: "Derrota a un total de 100 enemigos." },
+      { tier: "bronce", nombre: "Cazademonios experimentado", desc: "Derrota a un total de 1.000 enemigos." },
+
+      { tier: "bronce", nombre: "Smokin'!", desc: "Realiza un combo en el nivel de estilo S (Smokin'!)." },
+      { tier: "bronce", nombre: "Smokin' Style!!", desc: "Realiza un combo en el nivel de estilo SS (Smokin' Style!!)." },
+      { tier: "bronce", nombre: "Smokin' Sick Style!!!", desc: "Realiza un combo en el nivel de estilo SSS (Smokin' Sick Style!!!)." },
+
+      { tier: "bronce", nombre: "Material legendario", desc: "Completa todas las misiones en modo Caballero Oscuro Legendario." },
+      { tier: "plata", nombre: "Soy la leyenda", desc: "Completa todas las misiones en modo Caballero Oscuro Legendario con rango S." },
+
+      { tier: "bronce", nombre: "Diablo azul", desc: "Completa el juego con Vergil." },
+      { tier: "bronce", nombre: "Arma letal", desc: "Completa el juego con Lady y Trish." },
+
+      { tier: "bronce", nombre: "Caballero de la Orden", desc: "Completa todas las fases del Palacio sangriento con Nero." },
+      { tier: "bronce", nombre: "Cazademonios", desc: "Completa todas las fases del Palacio sangriento con Dante." },
+      { tier: "bronce", nombre: "Diablo pálido", desc: "Completa todas las fases del Palacio sangriento con Vergil." },
+      { tier: "bronce", nombre: "Lady Bazooka", desc: "Completa todas las fases del Palacio sangriento con Lady." },
+      { tier: "bronce", nombre: "Súcubo de luz", desc: "Completa todas las fases del Palacio sangriento con Trish." },
+      { tier: "oro", nombre: "Final de la función", desc: "Completa todas las fases del Palacio sangriento con todos los personajes." },
+      { tier: "plata", nombre: "Eficiente", desc: "Completa todas las fases del Palacio sangriento en 2 horas." },
+      { tier: "oro", nombre: "Intocable", desc: "Derrota a Dante en el Palacio sangriento sin recibir daños." },
+      { tier: "bronce", nombre: "Intrépido", desc: "Completa todas las fases del Palacio sangriento en modo Turbo." },
+
+      { tier: "bronce", nombre: "Infravalorado", desc: "Derrota a Dante con rango SSS en dificultad Hijo de Sparda o superior." },
+      { tier: "bronce", nombre: "Extinguido", desc: "Derrota a Berial con rango SSS en dificultad Hijo de Sparda o superior." },
+      { tier: "bronce", nombre: "Seducido", desc: "Derrota a Bael o a Dagon con rango SSS en dificultad Hijo de Sparda o superior." },
+      { tier: "bronce", nombre: "Esterilizada", desc: "Derrota a Echidna con rango SSS en dificultad Hijo de Sparda o superior." },
+      { tier: "bronce", nombre: "Endiablado", desc: "Derrota a Angelo Credo con rango SSS en dificultad Hijo de Sparda o superior." },
+      { tier: "bronce", nombre: "Diseccionado", desc: "Derrota a Angelo Agnus con rango SSS en dificultad Hijo de Sparda o superior." },
+      { tier: "bronce", nombre: "Salvado", desc: "Derrota al Salvador con rango SSS en dificultad Hijo de Sparda o superior." },
+
+      { tier: "plata", nombre: "Legendario Cazademonios", desc: "Derrota a 10.000 enemigos." },
+      { tier: "bronce", nombre: "La Ira del Diablo", desc: "Derrota a 10 enemigos en 1 segundo." },
+    ],
+  },
+
+  {
     id: "metal-gear-1-2-master-collection",
     titulo: "Metal Gear & Metal Gear 2: Solid Snake",
     saga: "Metal Gear",
