@@ -318,4 +318,480 @@ const GAMES = [
       { tier: "oro", nombre: "Exorcista de fotos fantasma", desc: "Exorciza una foto fantasma." },
     ],
   },
+
+  {
+    id: "metal-gear-solid-2-master-collection",
+    titulo: "Metal Gear Solid 2: Sons of Liberty",
+    saga: "Metal Gear",
+    anio: 2001,
+    plataformas: "PS4 · PS5 · Xbox Series · Switch · PC (Metal Gear Solid: Master Collection Vol. 1, 2023)",
+    horasPlatino: 35,
+    dificultad: 8,
+    color: "#4a4e69",
+    resumen:
+      "Solid Snake se infiltra en un petrolero para investigar un nuevo Metal Gear, pero la verdadera historia la protagoniza Raiden, enviado después a la planta Big Shell para enfrentarse a Solidus Snake y a los Hijos de los Patriotas. Es el platino más largo y exigente de la Master Collection Vol. 1: además de la historia hay que recolectar chapas de identificación en varias dificultades para desbloquear objetos especiales, y sobre todo completar el juego entero con el rango Big Boss, una carrera casi perfecta en dificultad Extrema con muy poco margen de error.",
+    perdibles: [
+      {
+        nombre: "Big Boss",
+        razon:
+          "Exige terminar el carguero y la planta en dificultad Extrema en menos de 3 horas, sin continuar, sin matar a nadie, disparando 700 balas como máximo, sin usar raciones ni objetos especiales, con el radar desactivado y entrando en alerta 3 veces o menos. Si fallas cualquiera de estas condiciones, esa partida deja de servir para el rango Big Boss: toca recargar una partida guardada anterior (o empezar de nuevo) y repetir la sección con más cuidado.",
+      },
+      {
+        nombre: "¿Quién necesita munición?",
+        razon:
+          "La bandana solo se desbloquea si reúnes al menos 50 chapas de identificación jugando el carguero en las dificultades Muy Fácil y Fácil, antes de terminar ese capítulo. Si lo completas sin reunir esa cantidad, hay que rejugarlo en esas dificultades en otra partida para conseguirlo.",
+      },
+      {
+        nombre: "El hombre invisible",
+        razon:
+          "El traje de sigilo del carguero pide unas 76 chapas de identificación reunidas en Muy Fácil, Fácil y Normal antes de terminar ese capítulo. Si lo acabas sin llegar a esa cifra, tendrás que rejugarlo en esas dificultades para desbloquearlo.",
+      },
+      {
+        nombre: "Peluca infinita",
+        razon:
+          "Requiere unas 80 chapas de identificación reunidas en la planta jugando en Muy Fácil y Fácil, antes de terminar ese capítulo. Si lo completas sin reunir esa cantidad, hay que rejugar la planta en esas dificultades en otra partida.",
+      },
+      {
+        nombre: "El hombre invisible II",
+        razon:
+          "Es el que más chapas de identificación exige: unas 120, reunidas en la planta jugando en Muy Fácil, Fácil y Normal antes de terminar ese capítulo. Si te lo saltas, tendrás que rejugar la planta en esas dificultades para conseguirlo.",
+      },
+      {
+        nombre: "Vampiro callejero",
+        razon:
+          "Solo aparece durante la escena final, justo después de derrotar a Solidus, mientras Snake y Raiden hablan en la calle; hay que fijarse con la cámara en Vamp durante ese momento concreto. Si te saltas la escena o no la ves entera, pierdes la oportunidad en esa partida.",
+      },
+      {
+        nombre: "Me rugen las tripas",
+        razon:
+          "Solo hay dos momentos en toda la historia (con Ames en la sala de rehenes, y protegiendo a Emma en el cerco de petróleo) donde se puede usar el micrófono direccional para escuchar a Johnny. Si no apuntas el micrófono en la dirección exacta en esos dos puntos, pierdes la oportunidad y hay que rejugar esas secciones en otra partida.",
+      },
+      {
+        nombre: "Ah, eso lo explica todo…",
+        razon:
+          "Hay que fotografiar al marine sin pantalones y enviarle la foto a Otacon antes de fotografiar el Metal Gear RAY en esa misma sala. Si fotografías primero a RAY, ya no puedes conseguir este trofeo en esa partida.",
+      },
+    ],
+    trofeos: [
+      { tier: "platino", nombre: "Serpiente suprema", desc: "Consigue todos los trofeos." },
+      { tier: "bronce", nombre: "¡Luces fuera!", desc: "Derrota a Olga Gurlukovich." },
+      { tier: "bronce", nombre: "Duelo de pistolas", desc: "Enfréntate a Revolver." },
+      { tier: "bronce", nombre: "Comando de artificieros", desc: "Deja que Peter Stillman te enseñe a desactivar bombas." },
+      { tier: "bronce", nombre: "Dama de la Suerte", desc: "Sobrevive al ataque de Fortune." },
+      { tier: "bronce", nombre: "Se acabó la fiesta", desc: "Derrota a Fatman." },
+      { tier: "bronce", nombre: "Gracias, Ames", desc: "Descubre dónde está el presidente." },
+      { tier: "bronce", nombre: "¡Vuela por los aires!", desc: "Destruye el AV-88 Harrier II." },
+      { tier: "bronce", nombre: "El presidente", desc: "Conoce al presidente James Johnson." },
+      { tier: "bronce", nombre: "Cazavampiros", desc: "Derrota a Vamp." },
+      { tier: "bronce", nombre: "Ven aquí, pequeña Emma", desc: "Encuentra a Emma Emmerich." },
+      { tier: "bronce", nombre: "Haciendo amigos", desc: "Gánate la amistad de Olga Gurlukovich." },
+      { tier: "bronce", nombre: "Hojalata nuclear", desc: "Destruya el Metal Gear RAY." },
+      { tier: "bronce", nombre: "Una serpiente menos", desc: "Derrota a Solidus Snake." },
+      { tier: "bronce", nombre: "Prueba de supremacía", desc: "Supera los capítulos del carguero y la planta en cualquier dificultad." },
+      { tier: "bronce", nombre: "Taquilla con sorpresa", desc: "Oculta a un enemigo en un taquilla." },
+      { tier: "bronce", nombre: "Juego sucio", desc: "Atrae a un guarda con una revista de chicas." },
+      { tier: "bronce", nombre: "Jefe de perrera", desc: "Consigue una placa de mercenario." },
+      { tier: "bronce", nombre: "Aversión a las cámaras", desc: "Destruye 5 cámaras." },
+      { tier: "bronce", nombre: "Malos humos", desc: "Aturde a un enemigo con la nube de humo de un extintor." },
+      { tier: "bronce", nombre: "El silencio es oro", desc: "Dispara a una radio de los enemigos." },
+      { tier: "bronce", nombre: "Cuidado: Muy caliente", desc: "Derrota a un enemigo con el vapor de una tubería." },
+      { tier: "bronce", nombre: "¿Me das un beso, cielo?", desc: "Dale un beso uno de los pósters." },
+      { tier: "bronce", nombre: "Pillado in fraganti", desc: "Haz que Otacon te pille \"estimulándote\" solo." },
+      { tier: "bronce", nombre: "Fenómeno paranormal", desc: "Haz una fotografía clara del fantasma en la bodega número 2." },
+      { tier: "bronce", nombre: "Ah, eso lo explica todo…", desc: "Envíale a Otacon una foto de un marine sin pantalones." },
+      { tier: "bronce", nombre: "Mis raciones...", desc: "Encuentra un piojo de mar en tus raciones." },
+      { tier: "bronce", nombre: "Me rugen las tripas", desc: "Escucha el ruido que hacen las tripas de Johnny." },
+      { tier: "bronce", nombre: "Vampiro callejero", desc: "Echa un vistazo a Vamp deambulando por las calles de Nueva York en la escena final del juego." },
+      { tier: "bronce", nombre: "El amor duele", desc: "Contempla cómo Rose mata a Raiden en el tejado." },
+      { tier: "bronce", nombre: "Pillados por sorpresa", desc: "Pilla por sorpresa a 30 enemigos." },
+      { tier: "bronce", nombre: "No te alteres", desc: "Dispara tranquilizante a 100 enemigos." },
+      { tier: "bronce", nombre: "No es nada personal", desc: "Rómpeles el cuello a 30 enemigos." },
+      { tier: "bronce", nombre: "Dulces sueños", desc: "Deja inconscientes a 30 enemigos." },
+      { tier: "bronce", nombre: "Firme y sujeto", desc: "Consigue un nivel 3 de agarre." },
+      { tier: "bronce", nombre: "Fotógrafo profesional", desc: "Consigue la cámara digital." },
+      { tier: "plata", nombre: "Completista de armas (carguero)", desc: "Consigue todos los tipos de armas en el carguero." },
+      { tier: "plata", nombre: "Completista de armas (planta)", desc: "Consigue todos los tipos de armas en la planta." },
+      { tier: "plata", nombre: "Día de mudanza", desc: "Reúne todas las cajas." },
+      { tier: "bronce", nombre: "Teatro personalizado", desc: "Ve una escena en el Teatro personalizado." },
+      { tier: "bronce", nombre: "¡Sobreviviré!", desc: "Completa el modo Boss Survival." },
+      { tier: "bronce", nombre: "Cuéntame un cuento", desc: "Completa todas las historias de Snake." },
+      { tier: "bronce", nombre: "Pan comido", desc: "Completa una misión RV o alternativa." },
+      { tier: "plata", nombre: "A por todas", desc: "Consigue el primer puesto en 50 misiones RV o alternativas diferentes." },
+      { tier: "plata", nombre: "¿Quién necesita munición?", desc: "Consigue la bandana." },
+      { tier: "plata", nombre: "El hombre invisible", desc: "Consigue el traje de camuflaje del carguero." },
+      { tier: "plata", nombre: "Peluca infinita", desc: "Consigue la peluca infinita." },
+      { tier: "plata", nombre: "El hombre invisible II", desc: "Consigue el traje de camuflaje de la planta." },
+      { tier: "plata", nombre: "Ruta pacifista", desc: "Completa el juego sin matar a nadie." },
+      { tier: "oro", nombre: "Máxima infiltración", desc: "Completa el juego sin entrar en modo alerta (no se incluyen los eventos donde el modo alerta es obligatorio)." },
+      { tier: "oro", nombre: "Big Boss", desc: "Consigue el título de Big Boss." },
+      { tier: "bronce", nombre: "De Pe a Pa Solid 2: Books of the Patriots", desc: "Lee todas las páginas del compendio de la historia." },
+    ],
+  },
+
+  {
+    id: "metal-gear-solid-3-master-collection",
+    titulo: "Metal Gear Solid 3: Snake Eater",
+    saga: "Metal Gear",
+    anio: 2004,
+    plataformas: "PS4 · PS5 · Xbox Series · Switch · PC (Metal Gear Solid: Master Collection Vol. 1, 2023)",
+    horasPlatino: 28,
+    dificultad: 7,
+    color: "#3f6b35",
+    resumen:
+      "Naked Snake se infiltra en la jungla soviética para rescatar al científico Sokolov, detener al coronel Volgin y destruir el Shagohod, en una misión que termina con la trágica traición de su mentora, The Boss. Es el platino más largo y exigente de la Master Collection: exige una partida pacifista completa recolectando toda la fauna, flora, camuflajes y pinturas faciales del juego, más una segunda partida aparte en dificultad Extrema para conseguir el rango FOXHOUND, la prueba contrarreloj más dura de toda la colección.",
+    perdibles: [
+      {
+        nombre: "Un final prematuro",
+        razon:
+          "Solo se consigue en un punto muy concreto: hay que llegar al muelle de Ponizovje con el rifle SVD equipado y disparar a The End justo cuando aparece en la cinemática previa a su combate oficial. Si sigues adelante sin hacerlo ahí, pierdes esa oportunidad para siempre en esa partida; además cuenta como una muerte letal, así que conviene guardar antes y recargar después para no romper la racha de \"Paz y amor\".",
+      },
+      {
+        nombre: "Hombre invisible",
+        razon:
+          "Para llegar al 100% de índice de camuflaje hace falta el camuflaje Musgo, que solo suelta The End si consigues sorprenderlo tres veces durante su combate (trofeo \"¡Despierta, holgazán!\"). Si lo derrotas de otra forma, lo matas antes de tiempo con \"Un final prematuro\" o no logras acorralarlo las tres veces, pierdes el camuflaje en esa partida y con él la posibilidad de este trofeo.",
+      },
+      {
+        nombre: "Aquí hay gato encerrado",
+        razon:
+          "Se consigue fijándote en un único fotograma cerca del final del juego, cuando Ocelot aparece un instante detrás del presidente durante el saludo. Es un momento brevísimo y muy fácil de pasar por alto sin saber que ocurre; si no lo ves justo en ese instante, no vuelve a repetirse en esa partida.",
+      },
+      {
+        nombre: "Se acabó la saga",
+        razon:
+          "Hay que disparar a Ocelot mientras está inconsciente en el suelo, justo después de una cinemática muy concreta durante la Misión Virtuosa (el prólogo del juego). Es una ventana de pocos segundos al principio de la partida; conviene guardar antes de hacerlo y recargar después, porque matarlo así cuenta como una baja letal y arruinaría la racha de \"Paz y amor\".",
+      },
+      {
+        nombre: "Paz y amor",
+        razon:
+          "Exige terminar el juego entero sin matar a nadie, jefes incluidos. Varios trofeos de la lista (como \"Un afeitado apurado\", \"Un final prematuro\" o \"Se acabó la saga\") solo se consiguen matando a alguien, así que hay que guardar la partida justo antes de cada una de esas muertes y recargarla enseguida para no perder la racha pacifista.",
+      },
+      {
+        nombre: "FOXHOUND",
+        razon:
+          "Es una carrera contrarreloj obligatoria en dificultad Extrema (o Extrema Europea), independiente de la partida de coleccionables: hay que terminar el juego en menos de 5 horas, con 25 guardados o menos, sin continuar, sin objetos especiales, sin activar ninguna alerta y sin matar a nadie. Si fallas cualquiera de esos requisitos en el camino, tienes que reiniciar la carrera completa desde el principio.",
+      },
+    ],
+    trofeos: [
+      { tier: "platino", nombre: "Serpiente honorífica", desc: "Consigue todos los trofeos." },
+
+      { tier: "bronce", nombre: "Alto el fuego", desc: "Vence a Ocelot." },
+      { tier: "bronce", nombre: "Ya no me duele", desc: "Derrota a The Pain." },
+      { tier: "bronce", nombre: "Valeroso", desc: "Derrota a The Fear." },
+      { tier: "bronce", nombre: "Este es el fin", desc: "Derrota a The End." },
+      { tier: "bronce", nombre: "¡Houston, teníamos un problema!", desc: "Derrota a The Fury." },
+      { tier: "bronce", nombre: "Un río de lamentos", desc: "Derrota a The Sorrow." },
+      { tier: "bronce", nombre: "Comandante de acero", desc: "Derrota a Volgin en una pelea sin armas." },
+      { tier: "bronce", nombre: "Tras la tormenta...", desc: "Derrota a Shagohod." },
+      { tier: "bronce", nombre: "El Patriota", desc: "Derrota a The Boss." },
+      { tier: "bronce", nombre: "El jefazo", desc: "Completa el juego en cualquier nivel de dificultad." },
+
+      { tier: "bronce", nombre: "Malote", desc: "CQC. Golpea a un guarda y derríbalo." },
+      { tier: "bronce", nombre: "Dime dónde está la bomba", desc: "CQC. Interroga a un enemigo." },
+      { tier: "bronce", nombre: "Ni se va a enterar", desc: "CQC. Sacude a un enemigo en el suelo." },
+      { tier: "bronce", nombre: "Un afeitado apurado", desc: "CQC. Córtale el cuello a un enemigo." },
+      { tier: "bronce", nombre: "Cirujano improvisado", desc: "Usa el cuchillo para sacar una bala." },
+      { tier: "bronce", nombre: "¿Puedo quedármelo?", desc: "Captura un animal vivo." },
+      { tier: "bronce", nombre: "Comeserpientes", desc: "Cómete una serpiente de cada clase." },
+      { tier: "bronce", nombre: "Jugando al escondite", desc: "Consigue un índice de camuflaje de +90 %." },
+      { tier: "bronce", nombre: "Hombre invisible", desc: "Consigue un índice de camuflaje del 100 %." },
+      { tier: "bronce", nombre: "Serpiente venenosa", desc: "Envenena a un guarda." },
+      { tier: "bronce", nombre: "Un momento de serenidad", desc: "Llama a una frecuencia de radio curativa." },
+      { tier: "bronce", nombre: "Radio macuto", desc: "Llama a todas las frecuencias de radio curativa." },
+      { tier: "bronce", nombre: "Apicultor", desc: "Usa las abejas para acosar al enemigo." },
+      { tier: "bronce", nombre: "Fuegos artificiales", desc: "Haz volar un cobertizo de munición con explosivos." },
+      { tier: "bronce", nombre: "Burlando a la muerte", desc: "Usa la pastilla de la muerte falsa." },
+      { tier: "bronce", nombre: "¡Despierta, holgazán!", desc: "Sacude a The End mientras está en el suelo sin que te vea llegar." },
+      { tier: "bronce", nombre: "Mi príncipe azul", desc: "Dispara a una Kerotan por primera vez." },
+      { tier: "bronce", nombre: "Algo en mal estado", desc: "Haz que Snake vomite." },
+      { tier: "bronce", nombre: "Se acabó la saga", desc: "Crea la paradoja temporal de Ocelot." },
+
+      { tier: "plata", nombre: "Serpiente legendaria", desc: "Consigue una serpiente tsuchinoko." },
+      { tier: "plata", nombre: "Un final prematuro", desc: "Mata a The End antes de que comience el combate real." },
+
+      { tier: "bronce", nombre: "Aquí hay gato encerrado", desc: "Echa un vistazo a Ocelot, oculto tras el presidente cuando este trata de darte la mano." },
+      { tier: "bronce", nombre: "Ojos de serpiente", desc: "Descubre todas las vistas en primera persona que no están indicadas con el icono del botón." },
+
+      { tier: "plata", nombre: "Ranas por doquier", desc: "Encuentra a los 64 Kerotans." },
+
+      { tier: "bronce", nombre: "Herborista", desc: "Reúne una planta medicinal de cada clase." },
+      { tier: "bronce", nombre: "Macedonia de fruta", desc: "Reúne una fruta de cada clase." },
+      { tier: "bronce", nombre: "Micólogo", desc: "Reúne un hongo de cada clase." },
+      { tier: "bronce", nombre: "Más vale pájaro en mano...", desc: "Reúne un pájaro de cada clase." },
+      { tier: "bronce", nombre: "Encantador de serpientes", desc: "Reúne una serpiente de cada clase." },
+      { tier: "bronce", nombre: "Maestro pescador", desc: "Reúne un pez de cada clase." },
+      { tier: "bronce", nombre: "Haute cuisine", desc: "Reúne una rana de cada clase." },
+      { tier: "bronce", nombre: "Coleccionista de armas", desc: "Reúne un arma de cada clase." },
+
+      { tier: "plata", nombre: "Víctima de la moda", desc: "Encuentra todos los tipos de trajes de camuflaje." },
+      { tier: "plata", nombre: "Maquillador profesional", desc: "Encuentra todos los tipos de pinturas faciales." },
+      { tier: "plata", nombre: "Rey de la selva", desc: "Consigue el título de \"Markhor\"." },
+      { tier: "plata", nombre: "Camuflaje óptico", desc: "Consigue el camuflaje óptico." },
+      { tier: "plata", nombre: "Pintura de cara infinita", desc: "Consigue la pintura de cara infinita." },
+      { tier: "plata", nombre: "Paz y amor", desc: "Completa el juego sin matar a nadie." },
+
+      { tier: "oro", nombre: "Camuflaje total", desc: "Completa el juego sin activar el modo de alerta (sin contar los eventos en los que se activa de forma obligatoria)." },
+      { tier: "oro", nombre: "FOXHOUND", desc: "Consigue el título de FOXHOUND." },
+
+      { tier: "bronce", nombre: "De Pe a Pa Solid 3: Book Eater", desc: "Lee todas las páginas del compendio de la historia." },
+    ],
+  },
+
+  {
+    id: "metal-gear-solid-4-master-collection",
+    titulo: "Metal Gear Solid 4: Guns of the Patriots",
+    saga: "Metal Gear",
+    anio: 2008,
+    plataformas: "PS5 · Xbox Series · Steam · Switch · Switch 2 (Metal Gear Solid: Master Collection Vol. 2, 2026)",
+    horasPlatino: 65,
+    dificultad: 8,
+    color: "#7a4a1f",
+    resumen:
+      "Old Snake, ya envejecido por el FOXDIE, recorre Oriente Medio, Sudamérica, Europa del Este y Shadow Moses persiguiendo a Liquid Ocelot y a las PMC que han tomado el control de la guerra moderna, en el cierre de la saga de Solid Snake. Es el platino más largo y extremo de toda la colección: además de superar la historia en cualquier dificultad, exige un mínimo de 8 partidas completas (con estadísticas de bajas, alertas y continues muchas veces contradictorias entre sí) para desbloquear los 40 emblemas del juego, uno de ellos obligatorio en dificultad Boss Extreme sin alertas, sin matar y sin continuar. Datos de horas/dificultad tomados de la guía de PowerPyx publicada el mismo día del lanzamiento de esta versión (26 de agosto de 2026): al ser tan reciente, tómalos como una primera estimación de la comunidad más que como un dato definitivo.",
+    perdibles: [
+      {
+        nombre: "Munición ilimitada",
+        razon:
+          "La bandana solo se consigue terminando una partida entera sin matar a ningún humano (los Gekko, robots pequeños y planeadores de Raging Raven no cuentan). Basta un solo asesinato letal para perder la oportunidad en esa partida y tener que reservarla para otra de las 8 obligatorias.",
+      },
+      {
+        nombre: "Camuflaje óptico",
+        razon:
+          "Exige terminar el juego entero sin activar ni una sola alerta. Una sola alerta arruina el intento para esa partida completa; conviene reservar una de las 8 partidas obligatorias solo para esto, yendo con cuidado y usando granadas chaff.",
+      },
+      {
+        nombre: "Los cinco muñecos de las bellezas",
+        razon:
+          "Laughing Octopus, Raging Raven, Crying Wolf y Screaming Mantis sueltan su muñeco solo si derrotas la primera fase (con armadura) de cada combate de forma no letal; el de Frog Soldier se consigue igual con los Haven Troopers del acto 1. Si matas a alguna en esa primera fase, pierdes su muñeco para siempre en esa partida.",
+      },
+      {
+        nombre: "Afición por las remembranzas",
+        razon:
+          "Hay que pulsar el botón de flashback en decenas de momentos concretos repartidos por todas las cinemáticas del juego, desde el prólogo hasta el epílogo; muchos no tienen ningún aviso en pantalla. Es fácil saltarse alguno sin darte cuenta, así que conviene dedicarle la partida donde vayas viendo todas las escenas con calma.",
+      },
+      {
+        nombre: "Ecos del campo de batalla",
+        razon:
+          "Una de las canciones del iPod solo se desbloquea al conseguir los 40 emblemas, lo que obliga a completar como mínimo 8 partidas distintas cumpliendo combinaciones de bajas, alertas y continues a veces opuestas entre sí. Es el trofeo más largo de todo el juego y el motivo principal de que el platino requiera tantas repeticiones.",
+      },
+      {
+        nombre: "Eres bueno.",
+        razon:
+          "Solo se consigue dejándote agarrar por Ocelot durante la tercera fase del combate final (la que tiene la barra de vida al estilo MGS3), sin forcejear para soltarte. Si te sueltas por instinto como en cualquier otro agarre del juego, pierdes el momento en esa partida.",
+      },
+      {
+        nombre: "¿También eres un Otaku?",
+        razon:
+          "Hay que ver en primera persona los 4 pósters de Akina repartidos entre los actos 2 y 3; uno de ellos está escondido tras un cuadro que hay que derribar a tiros, y otro solo aparece si sigues al miembro de la resistencia por la ruta de dificultad Boss Extreme. Si no visitas esas zonas exactas, se pierden en esa partida.",
+      },
+      {
+        nombre: "Frágil",
+        razon:
+          "Solo se consigue en la Zona Roja del acto 1, subiéndote al pedestal con dos estatuas y pulsando el botón de camuflaje para que Snake rompa sin querer la pieza más importante de una de ellas. Es un gesto muy concreto y fácil de pasar de largo si no sabes que está ahí.",
+      },
+    ],
+    trofeos: [
+      { tier: "platino", nombre: "El héroe legendario", desc: "Has obtenido todos los trofeos." },
+      { tier: "bronce", nombre: "Sol Líquido", desc: "Has completado el acto 1 (Oriente Medio)." },
+      { tier: "bronce", nombre: "Sol Sólido", desc: "Has completado el acto 2 (Sudamérica)." },
+      { tier: "bronce", nombre: "Tercer Sol", desc: "Has completado el acto 3 (Europa del Este)." },
+      { tier: "bronce", nombre: "Soles Gemelos", desc: "Has completado el acto 4 (Shadow Moses)." },
+      { tier: "bronce", nombre: "Sol Viejo", desc: "Has completado el acto 5 (Outer Haven)." },
+      { tier: "bronce", nombre: "Disfrutas matando, ésa es la razón.", desc: "Has matado a muchos enemigos en una zona... Y has vomitado." },
+      { tier: "bronce", nombre: "Muñeco Laughing Octopus", desc: "Has derrotado a Laughing Octopus sin usar armas letales y has obtenido el Muñeco Laughing Octopus." },
+      { tier: "bronce", nombre: "Muñeco Soldado Rana", desc: "Has escapado de los Haven Troopers en Oriente Medio sin usar armas letales y has obtenido el Muñeco Soldado Rana." },
+      { tier: "bronce", nombre: "Muñeco Raging Raven", desc: "Has derrotado a Raging Raven sin usar armas letales y has obtenido el Muñeco Raging Raven." },
+      { tier: "bronce", nombre: "Muñeco Crying Wolf", desc: "Has derrotado a Crying Wolf sin usar armas letales y has obtenido el Muñeco Crying Wolf." },
+      { tier: "bronce", nombre: "Muñeco Screaming Mantis", desc: "Has derrotado a Screaming Mantis sin usar armas letales y has obtenido el Muñeco Screaming Mantis." },
+      { tier: "plata", nombre: "Viento divino", desc: "Has provocado un \"viento divino\" usando el Tanegashima." },
+      { tier: "bronce", nombre: "Frágil", desc: "Has roto la parte más importante de una estatua." },
+      { tier: "bronce", nombre: "¡Las manos en alto!", desc: "Has retenido a un soldado enemigo a punta de pistola y lo has registrado." },
+      { tier: "oro", nombre: "Afición por las remembranzas", desc: "Has visto todos los flashbacks." },
+      { tier: "plata", nombre: "Hágase la luz", desc: "Has obtenido la Pistola Solar." },
+      { tier: "oro", nombre: "Ecos del campo de batalla", desc: "Has obtenido todos los temas para el iPod (excepto los obtenidos mediante contraseña)." },
+      { tier: "plata", nombre: "La muerte camina conmigo", desc: "Has escapado del estado de ALERTA llevando el Camuflaje cadáver." },
+      { tier: "oro", nombre: "Soy EL experto en armas", desc: "Has obtenido todas las armas (excepto las obtenidas mediante contraseña)." },
+      { tier: "oro", nombre: "Munición ilimitada.", desc: "Has obtenido la Bandana." },
+      { tier: "oro", nombre: "Camuflaje óptico", desc: "Has obtenido el Camuflaje óptico." },
+      { tier: "plata", nombre: "Fantasmagoría", desc: "Has hecho al menos 5 fotografías de fantasmas en la isla de Shadow Moses." },
+      { tier: "plata", nombre: "Pintura de guerra", desc: "Has obtenido 10 o más tipos de Camuflaje facial (excepto los obtenidos mediante contraseña)." },
+      { tier: "plata", nombre: "¡¡¡¿Sientes mi poder?!!!", desc: "Has tomado el control del cuerpo de un soldado enemigo usando la Marioneta Mantis o la Marioneta Sorrow." },
+      { tier: "bronce", nombre: "Control emocional", desc: "Has controlado las emociones de un soldado enemigo usando una Revista Emocionante." },
+      { tier: "bronce", nombre: "¡Dame más fuerte!", desc: "Has electrocutado a un soldado enemigo usando Mk. II o Mk. III." },
+      { tier: "bronce", nombre: "Bidón letal", desc: "Has derribado a un enemigo en vuelo usando un bidón." },
+      { tier: "plata", nombre: "Círculos en la cosecha", desc: "Has encontrado un círculo en la cosecha y has oído una voz misteriosa." },
+      { tier: "plata", nombre: "¿También eres un Otaku?", desc: "Has visto los pósters de todas las modelos." },
+      { tier: "plata", nombre: "Eres bueno.", desc: "Te ha besado Ocelot durante la batalla final." },
+      { tier: "bronce", nombre: "Tararea esta melodía", desc: "Has reproducido \"Oishii Two-han Seikatsu\" y has hecho bailar a una del Cuerpo B&B." },
+      { tier: "bronce", nombre: "Visión aérea... como en los viejos tiempos...", desc: "Has usado la visión aérea en la isla de Shadow Moses." },
+      { tier: "bronce", nombre: "¡LIQUID!", desc: "Has pilotado el Metal Gear REX y has gritado a tu enemigo." },
+      { tier: "bronce", nombre: "De Pe a Pa Solid 4: Books of the Patriots", desc: "Lee todas las páginas del compendio de la historia." },
+    ],
+  },
+
+  {
+    id: "metal-gear-solid-peace-walker-master-collection",
+    titulo: "Metal Gear Solid: Peace Walker",
+    saga: "Metal Gear",
+    anio: 2010,
+    plataformas: "PS5 · Xbox Series · Steam · Switch · Switch 2 (Metal Gear Solid: Master Collection Vol. 2, 2026)",
+    horasPlatino: 55,
+    dificultad: 5,
+    color: "#1f7a6c",
+    resumen:
+      "Big Boss funda a las Militaires Sans Frontières en Costa Rica en 1974 para investigar la aparición de un misterioso Metal Gear bípedo, el Peace Walker, en una historia que sienta las bases de Cipher y de la saga posterior. Reutiliza el contenido de Peace Walker HD Edition pero le quita todos los trofeos ligados al multijugador online (comerciar, repartir objetos, jugar Operaciones de Enfrentamiento) y añade varios nuevos jugables en solitario, incluido capturar todos los vehículos a la vez. El platino gira en torno a mejorar el personal de la Mother Base para conseguir el equipo necesario y sacar rango S en absolutamente todas las Operaciones Principales y Adicionales. Datos de horas/dificultad tomados de la guía de PowerPyx publicada el mismo día del lanzamiento de esta versión (26 de agosto de 2026), que confirma además que no hay ningún trofeo perdible: todas las misiones se pueden rejugar libremente después de terminar la historia.",
+    perdibles: [],
+    trofeos: [
+      { tier: "platino", nombre: "Vic Boss", desc: "Has obtenido todos los trofeos." },
+      { tier: "bronce", nombre: "Un ejército sin fronteras", desc: "Has completado el prólogo: \"Un ejército sin fronteras\"." },
+      { tier: "bronce", nombre: "Un país sin ejército", desc: "Has completado el capítulo 1: \"Un país sin ejército\"." },
+      { tier: "bronce", nombre: "El héroe fantasma", desc: "Has completado el capítulo 2: \"El héroe fantasma\"." },
+      { tier: "bronce", nombre: "El renacimiento de una nación", desc: "Has completado el capítulo 3: \"El renacimiento de una nación\"." },
+      { tier: "bronce", nombre: "Ilusión de paz", desc: "Has completado el capítulo 4: \"Ilusión de paz\"." },
+      { tier: "bronce", nombre: "Outer Heaven", desc: "Has completado el capítulo 5: Outer Heaven." },
+      { tier: "bronce", nombre: "Es como mi segunda piel", desc: "Ocultarse dentro de una caja le da a uno una sensación increíble de paz interior." },
+      { tier: "bronce", nombre: "No está nada mal", desc: "Has disparado a un enemigo justo en la parte posterior con un arma somnífera." },
+      { tier: "bronce", nombre: "Daño colateral", desc: "Heriste a varios enemigos volando un barril o un camión de combustible (solo en partida individual)." },
+      { tier: "bronce", nombre: "Yo no necesito ningún arma", desc: "Has utilizado CQC seis veces seguidas." },
+      { tier: "bronce", nombre: "Recuerda lo básico del CQC", desc: "Deja fuera de combate a 50 enemigos con CQC." },
+      { tier: "bronce", nombre: "Me he dado cuenta que salen muchos \"Fin del Juego\"", desc: "Has llegado a 50 o más pantallas de \"Fin del Juego\"." },
+      { tier: "bronce", nombre: "¿No tienes nada más que hacer?", desc: "Has rodado por el suelo 100 veces o más en una misión." },
+      { tier: "bronce", nombre: "Kuwabara, Kuwabara", desc: "Has escuchado a un fantasma por la radio." },
+      { tier: "bronce", nombre: "Confía en mí", desc: "Le has lanzado una granada chaff al Metal Gear ZEKE, y Paz te ha preguntado \"¿Qué pretendes hacer?\" (solo en partida individual)." },
+      { tier: "plata", nombre: "Munición ilimitada", desc: "Has conseguido el pañuelo infinito. Ahora ya no tienes que preocuparte de quedarte sin balas." },
+      { tier: "plata", nombre: "La muerte invisible", desc: "Has conseguido el camuflaje óptico. Ahora ya no tienes que preocuparte de que te detecten." },
+      { tier: "bronce", nombre: "Kotodama", desc: "Usa un grito de guerra de los mensajes de Co-Ops." },
+      { tier: "bronce", nombre: "Viento divino", desc: "Has capturado a un soldado utilizando un viento divino." },
+      { tier: "bronce", nombre: "¡Vamos de excursión!", desc: "Has llevado a cabo una misión en OPERACIONES EXTERIORES." },
+      { tier: "plata", nombre: "Comando de élite", desc: "Has completado la misión \"Capturar la base enemiga 06\" de OPERACIONES EXTERIORES usando solo soldados." },
+      { tier: "bronce", nombre: "Secuestrador de máquinas", desc: "Has capturado un vehículo." },
+      { tier: "bronce", nombre: "Devorador de basiliscos", desc: "Has derrotado a Pupa, Chrysalis, Cocoon y Peace Walker." },
+      { tier: "plata", nombre: "Comeacero", desc: "Has derrotado a todas las armas con IA." },
+      { tier: "bronce", nombre: "¡ZEKE desplegado!", desc: "Completa el Metal Gear ZEKE." },
+      { tier: "plata", nombre: "Nombre en clave ZEKE", desc: "Has personalizado la cabeza y las patas del Metal Gear ZEKE con piezas especiales de armas IA." },
+      { tier: "bronce", nombre: "P.D. Te quiero", desc: "Has leído la carta de amor de Huey." },
+      { tier: "bronce", nombre: "Las memorias de Strangelove", desc: "Has leído todas las memorias de Strangelove." },
+      { tier: "bronce", nombre: "Querido diario", desc: "Has leído todo el diario de Paz." },
+      { tier: "plata", nombre: "Amor platónico", desc: "Has obtenido la categoría S en una cita con Paz." },
+      { tier: "plata", nombre: "¡Pero qué hombretón!", desc: "Has obtenido la categoría S en una cita con Kaz." },
+      { tier: "bronce", nombre: "Héroe del disparo a la cabeza", desc: "Derriba a 50 enemigos con un disparo a la cabeza." },
+      { tier: "bronce", nombre: "Maestro del asalto", desc: "Has asaltado a 100 enemigos." },
+      { tier: "bronce", nombre: "Especialista en aturdimiento", desc: "Has aturdido a 100 enemigos." },
+      { tier: "bronce", nombre: "Asesino implacable", desc: "Has eliminado a 100 enemigos." },
+      { tier: "bronce", nombre: "Profesional del sistema Fulton", desc: "Has utilizado el sistema Fulton 300 veces." },
+      { tier: "oro", nombre: "Ladrón de metal", desc: "Captura todos los vehículos a la vez." },
+      { tier: "bronce", nombre: "¡Qué manos más largas tienes!", desc: "Has conseguido todos los trajes." },
+      { tier: "plata", nombre: "Jefe de personal", desc: "Has reclutado a todos los personajes especiales." },
+      { tier: "bronce", nombre: "Hideo Kojima en persona", desc: "Has reclutado a Hideo Kojima." },
+      { tier: "bronce", nombre: "Salto de fe", desc: "Has realizado un salto de fe." },
+      { tier: "bronce", nombre: "¡Qué buena pinta!", desc: "¡Has preparado una buena ración!" },
+      { tier: "bronce", nombre: "Monster Hunter", desc: "Has completado todas las misiones de caza." },
+      { tier: "bronce", nombre: "Categoría A en todas las OPERACIONES PRINCIPALES", desc: "Has completado todas las OPERACIONES PRINCIPALES con una categoría A o superior." },
+      { tier: "plata", nombre: "Categoría S en todas las OPERACIONES PRINCIPALES", desc: "Has completado todas las OPERACIONES PRINCIPALES con una categoría S." },
+      { tier: "bronce", nombre: "Todas las OPERACIONES ADICIONALES completadas", desc: "Has completado todas las OPERACIONES ADICIONALES." },
+      { tier: "bronce", nombre: "Categoría A en todas las OPERACIONES ADICIONALES", desc: "Has completado todas las OPERACIONES ADICIONALES con una categoría A o superior." },
+      { tier: "plata", nombre: "Categoría S en todas las OPERACIONES ADICIONALES", desc: "Has completado todas las OPERACIONES ADICIONALES con una categoría S." },
+      { tier: "oro", nombre: "Big Boss", desc: "Has completado todas las OPERACIONES PRINCIPALES y OPERACIONES ADICIONALES con una categoría S." },
+      { tier: "bronce", nombre: "De Pe a Pa Solid: Peace Walker", desc: "Lee todas las páginas del compendio de la historia." },
+    ],
+  },
+
+  {
+    id: "resident-evil-7-biohazard",
+    titulo: "Resident Evil 7: Biohazard",
+    saga: "Resident Evil",
+    anio: 2017,
+    plataformas: "PS4 · PS5 · Xbox One · Xbox Series · PC · Switch 2",
+    horasPlatino: 25,
+    dificultad: 5,
+    color: "#5c1a1a",
+    resumen:
+      "Ethan Winters viaja a una plantación abandonada de Luisiana para rescatar a su esposa Mia y acaba atrapado en la mansión de los Baker, una familia poseída por un hongo mutante que la saga usó para reinventarse en primera persona. El platino exige un mínimo de tres partidas: una para conocer el juego, ver un final y hacerte con casi todos los coleccionables; una segunda en Fácil como partida rápida (menos de 4 horas, sin abrir el baúl más de 3 veces ni usar más de 3 botiquines); y una tercera en la dificultad extrema Manicomio, donde las monedas antiguas cambian de ubicación y hay que volver a encontrarlas todas.",
+    perdibles: [
+      {
+        nombre: "Esto es personal",
+        razon:
+          "Hay que rematar con el cuchillo a uno de los insectos voladores grandes (los enjambres pequeños no cuentan). Se encuentran con facilidad en la Casa Vieja nada más empezar esa zona; si sigues la historia sin hacerlo ahí, toca esperar a otra partida.",
+      },
+      {
+        nombre: "Exterminador",
+        razon:
+          "Cuando conoces a Marguerite por primera vez, cubre varias puertas de la Casa Vieja con arañas: acércate y córtalas con el cuchillo antes de que avance la historia. Hay arañas de repuesto en los armeros de la zona y durante la pelea del invernadero, pero si te las saltas todas se pierde hasta otra partida.",
+      },
+      {
+        nombre: "Quema de brujas",
+        razon:
+          "Al salir del sótano de la Casa Vieja, Marguerite empieza a deambular por la casa y hay que dispararle hasta ahuyentarla. Es la única vez que ocurre esto en toda la partida: si sales de la zona sin conseguirlo, se pierde para siempre en esa partida.",
+      },
+      {
+        nombre: "Menos es más",
+        razon:
+          "Se consigue en la misma persecución de Marguerite que \"Quema de brujas\": dispara con la escopeta a dos o más de los insectos que invoca de un solo tiro. Es la misma ventana única, así que conviene ir a por ambos trofeos a la vez.",
+      },
+      {
+        nombre: "Por los pelos",
+        razon:
+          "Durante el combate obligatorio contra Jack en la morgue, agáchate justo cuando ataque desde arriba con sus tijeras/motosierras. Es un patrón concreto de ese enfrentamiento puntual; si no lo reconoces a tiempo, se pierde hasta otra partida.",
+      },
+      {
+        nombre: "Aterrizaje forzoso",
+        razon:
+          "En la pelea contra Marguerite del invernadero, dispárale justo cuando trepa por las paredes y salta hacia ti; solo hace ese salto 2-3 veces en todo el combate. Si la derrotas antes de acertarle en el aire, el trofeo se pierde hasta la siguiente partida.",
+      },
+      {
+        nombre: "Albóndigas de la casa",
+        razon:
+          "En el barco viejo, deja que te agarre un enemigo de brazos finos, ponle una bomba de control remoto en la boca y detónala. Esos enemigos concretos y las bombas de mano solo están disponibles en esa sección del barco.",
+      },
+      {
+        nombre: "No me pillas",
+        razon:
+          "Tras la pelea contra Jack en el garaje, hay que poner la cinta de Mia en la Sala de Recreo y superarla sin que Marguerite te vea. El juego no tiene selección de capítulos, así que si avanzas la historia sin encontrar o completar bien esa cinta, se pierde para esa partida.",
+      },
+      {
+        nombre: "Sorpresa",
+        razon:
+          "En la buhardilla de la habitación infantil hay que resolver el puzle de la cinta \"Cumpleaños feliz\" en menos de 5 minutos. Puedes repetir la cinta cuantas veces haga falta mientras sigas en esa zona, pero una vez avanzas la historia ya no se puede reintentar en esa partida.",
+      },
+    ],
+    trofeos: [
+      { tier: "platino", nombre: "Bienvenido a la familia", desc: "Consigue todos los trofeos." },
+      { tier: "bronce", nombre: "Está viva", desc: "Viaja a Louisiana." },
+      { tier: "bronce", nombre: "No estás invitado", desc: "Escapa de la casa de invitados." },
+      { tier: "bronce", nombre: "No vas a escapar", desc: "Consigue salir al patio." },
+      { tier: "bronce", nombre: "Secretos en la oscuridad", desc: "Descubre el secreto de la casa vieja." },
+      { tier: "bronce", nombre: "No mires atrás", desc: "Escapa del hogar de los Baker." },
+      { tier: "bronce", nombre: "Como pez en el pantano", desc: "Escapa del barco." },
+      { tier: "plata", nombre: "La noche llega a su fin", desc: "Desbloquea un primer final." },
+      { tier: "plata", nombre: "Solo un recuerdo", desc: "Desbloquea un segundo final." },
+      { tier: "bronce", nombre: "Medicinas y golosinas", desc: "Completa el juego en modo fácil." },
+      { tier: "bronce", nombre: "Mugre y óxido", desc: "Completa el juego en modo normal." },
+      { tier: "plata", nombre: "Sangre y lágrimas", desc: "Completa el juego en modo manicomio." },
+      { tier: "bronce", nombre: "Por si acaso", desc: "Cierra una puerta cualquiera." },
+      { tier: "bronce", nombre: "Escudo para siempre", desc: "Bloquea un ataque enemigo." },
+      { tier: "bronce", nombre: "¡Eureka!", desc: "Haz un descubrimiento examinando un objeto." },
+      { tier: "bronce", nombre: "Master of Unlocking", desc: "Usa una ganzúa." },
+      { tier: "bronce", nombre: "Buen intento", desc: "Coloca un objeto incompatible con el puzle de sombras." },
+      { tier: "bronce", nombre: "Tercer ojo", desc: "Usa los psico-estimulantes." },
+      { tier: "bronce", nombre: "Bolsillos extra", desc: "Incrementa tus espacios para objetos." },
+      { tier: "bronce", nombre: "Esto es personal", desc: "Elimina a un enemigo con el cuchillo." },
+      { tier: "bronce", nombre: "Exterminador", desc: "Limpia una puerta plagada de insectos con el cuchillo." },
+      { tier: "plata", nombre: "Quema de brujas", desc: "Ataca y repele a Marguerite mientras pasea por la casa vieja." },
+      { tier: "plata", nombre: "Por los pelos", desc: "Evita el ataque de las tijeras de Jack agachándote." },
+      { tier: "plata", nombre: "Menos es más", desc: "Acaba con dos o más enemigos de un disparo." },
+      { tier: "plata", nombre: "Aterrizaje forzoso", desc: "Dispara y derriba a Marguerite cuando salte hacia ti." },
+      { tier: "bronce", nombre: "Albóndigas de la casa", desc: "Elimina a un enemigo pegándole una bomba de control remoto y detonándola." },
+      { tier: "bronce", nombre: "10 en química", desc: "Crea todos los objetos que contengan fluido químico y fluido químico fuerte." },
+      { tier: "bronce", nombre: "No me pillas", desc: "Completa el vídeo de Mia sin que Marguerite te vea." },
+      { tier: "plata", nombre: "Sorpresa", desc: "Completa el vídeo \"Cumpleaños feliz\" en menos de 5 minutos." },
+      { tier: "bronce", nombre: "Cinéfilo", desc: "Ve todos los vídeos en una partida." },
+      { tier: "plata", nombre: "Confía en el pelícano", desc: "Obtén todas las monedas antiguas en dificultad fácil o normal." },
+      { tier: "plata", nombre: "Pelícanos de manicomio", desc: "Obtén todas las monedas antiguas en dificultad manicomio." },
+      { tier: "plata", nombre: "Ávido lector", desc: "Lee todos los documentos en una partida." },
+      { tier: "bronce", nombre: "Aquí, allí y en todas partes", desc: "Destruye una estatuilla de Mr. Everywhere." },
+      { tier: "plata", nombre: "Y ya en ninguna parte", desc: "Destruye todas las estatuillas de Mr. Everywhere." },
+      { tier: "oro", nombre: "No tenemos tiempo", desc: "Completa el juego en menos de 4 horas." },
+      { tier: "oro", nombre: "Licenciado en logística", desc: "Completa el juego sin abrir el baúl más de 3 veces." },
+      { tier: "oro", nombre: "Vida sana", desc: "Completa el juego sin usar un medicamento más de 3 veces." },
+    ],
+  },
 ];
