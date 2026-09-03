@@ -175,40 +175,9 @@ function renderGamePage() {
   }
   container.appendChild(missable);
 
-  if (game.guias && game.guias.length > 0) {
-    const guides = document.createElement("div");
-    guides.className = "guides-section";
-    guides.innerHTML = `
-      <h2 class="section-title-big">🧩 Guías y coleccionables</h2>
-      <p class="section-hint">Códigos, ubicaciones y soluciones de acertijos para los trofeos que más cuesta encontrar por tu cuenta.</p>
-      <div class="guide-list">
-        ${game.guias
-          .map(
-            (g, i) => `
-          <details class="guide-block" ${i === 0 ? "open" : ""}>
-            <summary>${g.titulo}</summary>
-            <div class="guide-body">
-              ${g.descripcion ? `<p>${g.descripcion}</p>` : ""}
-              ${
-                g.items && g.items.length
-                  ? `<ol class="guide-items">${g.items.map((it) => `<li>${it}</li>`).join("")}</ol>`
-                  : ""
-              }
-              ${
-                g.enlace && g.enlace.url
-                  ? `<a class="guide-link" href="${g.enlace.url}" target="_blank" rel="noopener noreferrer">🗺️ ${
-                      g.enlace.texto || "Ver mapa con capturas en la guía original"
-                    } →</a>`
-                  : ""
-              }
-            </div>
-          </details>
-        `
-          )
-          .join("")}
-      </div>
-    `;
-    container.appendChild(guides);
+  function findGuia(trofeoNombre) {
+    if (!game.guias) return null;
+    return game.guias.find((g) => g.trofeos && g.trofeos.includes(trofeoNombre)) || null;
   }
 
   const controlsRow = document.createElement("div");
@@ -257,6 +226,7 @@ function renderGamePage() {
     }
     trofeos.forEach((t) => {
         const isObtained = obtained.has(t.nombre);
+        const guia = findGuia(t.nombre);
         const card = document.createElement("div");
         card.className = "trophy-card" + (isObtained ? " obtained" : "");
         card.innerHTML = `
@@ -267,6 +237,13 @@ function renderGamePage() {
           <div class="trophy-info">
             <h4>${t.nombre}</h4>
             <p>${t.desc}</p>
+            ${
+              guia && guia.enlace && guia.enlace.url
+                ? `<a class="guide-link-inline" href="${guia.enlace.url}" target="_blank" rel="noopener noreferrer">🗺️ ${
+                    guia.enlace.texto || "Ver mapa/ubicaciones"
+                  } →</a>`
+                : ""
+            }
           </div>
           <div class="trophy-tier-label ${t.tier}">${TIER_LABEL[t.tier]}</div>
         `;

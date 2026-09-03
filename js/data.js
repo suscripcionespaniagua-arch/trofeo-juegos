@@ -21,6 +21,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["El hombre de Vitruvio"],
         titulo: "Ubicación de los 20 glifos (vídeo del Sujeto 16)",
         descripcion:
           "Cada glifo se encuentra con la Vista de Águila y, al activarlo, lanza uno de los 20 acertijos que forman \"La Verdad\". Los acertijos van en un orden fijo sin importar en qué orden encuentres los glifos, así que basta con ir localizándolos según pasees por cada ciudad. Ubicación aproximada de cada uno:",
@@ -52,6 +53,7 @@ const GAMES = [
         },
       },
       {
+        trofeos: ["Creador de mitos"],
         titulo: "Ubicación de las 8 estatuillas de Monteriggioni",
         descripcion:
           "Son cuatro parejas de estatuas romanas (Marte y Venus, Júpiter y Plutón, Neptuno y Minerva, Diana y Apolo) escondidas por el pueblo de Monteriggioni. Colocarlas en sus cuatro pedestales del patio de la villa da 8.000 florines además del trofeo.",
@@ -71,6 +73,7 @@ const GAMES = [
         },
       },
       {
+        trofeos: ["En memoria de Petruccio"],
         titulo: "Las 100 plumas (En memoria de Petruccio)",
         descripcion:
           "Son 100 plumas repartidas por todo el mapa (aproximadamente 27 en Florencia, 4 en Monteriggioni, 11 en la Toscana, 12 en Romaña/Forlì y 46 en Venecia, que es con diferencia la ciudad con más). No se listan aquí una por una porque son demasiadas para que un texto plano sea útil: la forma más práctica de encontrarlas todas es ir ciudad por ciudad usando la Vista de Águila en los tejados y canales, y apoyarte en un mapa interactivo o vídeo-guía externo del tipo \"Assassin's Creed 2 feather locations map\", que marca las 100 sobre el mapa del juego. Se recogen automáticamente al pasar cerca (brillan en dorado) y el contador está en el menú de logros/estadísticas para saber cuántas te faltan por zona.",
@@ -195,6 +198,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["Secreto en el aire"],
         titulo: "Ubicación de las 12 misiones secretas (para 'Secreto en el aire')",
         descripcion:
           "Las misiones secretas son portales ocultos que hay que examinar para activarlos; cada una da un fragmento de orbe azul y solo se puede completar una vez por partida. El orden aquí es el de aparición según la historia.",
@@ -270,6 +274,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["Un secreto desvelado"],
         titulo: "Dónde encontrar una misión secreta (para 'Un secreto desvelado')",
         descripcion:
           "A diferencia del resto de la saga, aquí las misiones secretas son simples salas de combate contra oleadas de enemigos, y sus puertas de entrada son indistinguibles del resto del escenario. Solo hace falta superar UNA, con Dante o con Lucia, en cualquier dificultad, así que basta con ir a por la primera disponible. Con Dante, en la Misión 1 (la calle donde aparecen los Puia por primera vez) hay dos entradas: examina la puerta grande de esa zona, o sigue la calle hasta un edificio pequeño que bloquea el paso, sáltalo y examina su cara opuesta.",
@@ -331,6 +336,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["Esforzarse al máximo"],
         titulo: "Ubicación de las 12 misiones secretas (para 'Esforzarse al máximo')",
         descripcion:
           "A partir de este juego las entradas suelen ser elementos del escenario que brillan (sobre todo en rojo); hay que examinarlos para activar el portal. Cada una da un fragmento de orbe azul la primera vez.",
@@ -447,6 +453,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["Sin dejar nada en el tintero"],
         titulo: "Ubicación de las 12 misiones secretas (para 'Sin dejar nada en el tintero')",
         descripcion:
           "Las entradas son siempre un papel blanco con letras rojas clavado en el escenario. Los números de misión indicados son los de la campaña de Nero; varias también son accesibles más adelante recorriendo el mismo escenario con Dante.",
@@ -536,6 +543,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["Exorcista de fotos fantasma"],
         titulo: "Dónde conseguir la cámara y fotografiar al fantasma",
         descripcion:
           "El trofeo \"Exorcista de fotos fantasma\" es el más críptico de la lista: ni la cámara ni el fantasma tienen ningún aviso en pantalla. Esto es lo que confirma la guía de PowerPyx para esta versión.",
@@ -628,6 +636,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["¿Quién necesita munición?", "El hombre invisible", "Peluca infinita", "El hombre invisible II"],
         titulo: "Cómo conseguir chapas de identificación rápido",
         descripcion:
           "Las chapas son el coleccionable clave del juego: hacen falta para la bandana y los dos trajes de camuflaje (ver \"perdibles\"). El mecanismo es siempre el mismo, según la guía de chapas de IGN.",
@@ -744,6 +753,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["Ranas por doquier", "Mi príncipe azul"],
         titulo: "Los 64 Kerotan",
         descripcion:
           "El trofeo \"Ranas por doquier\" pide encontrar las 64 ranas de goma escondidas por el mapa. Son demasiadas para listar una a una, pero la regla que sigue su reparto (documentada en metalgear.fandom.com) hace la búsqueda mucho más manejable.",
@@ -878,6 +888,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["Ecos del campo de batalla"],
         titulo: "Los 40 emblemas y cómo repartirlos entre partidas",
         descripcion:
           "\"Ecos del campo de batalla\" exige los 40 emblemas del juego (la canción \"Snake Eater\" del iPod es la recompensa por completarlos todos) y es el motivo real de que el platino pida un mínimo de 8 partidas. Según la guía de emblemas de PowerPyx publicada el mismo día del lanzamiento de esta versión, conviene repartir las condiciones entre partidas en vez de perseguir cada emblema por separado, porque muchos comparten requisitos.",
@@ -947,6 +958,7 @@ const GAMES = [
     perdibles: [],
     guias: [
       {
+        trofeos: ["Jefe de personal", "Hideo Kojima en persona"],
         titulo: "Dónde están los 4 miembros del personal especial",
         descripcion:
           "\"Jefe de personal\" pide tener reclutados a los 4 personajes especiales del juego a la vez (uno de ellos es el propio Hideo Kojima, con trofeo aparte). No es perdible porque las misiones se pueden rejugar, pero conviene saber dónde están para no perder tiempo buscando. Ubicaciones según la guía de PowerPyx para esta versión.",
@@ -1118,6 +1130,7 @@ const GAMES = [
     ],
     guias: [
       {
+        trofeos: ["Confía en el pelícano"],
         titulo: "Monedas antiguas en dificultad Fácil o Normal (18 monedas)",
         descripcion:
           "IMPORTANTE: estas ubicaciones son válidas solo en Fácil/Normal. En dificultad Manicomio las monedas cambian de sitio por completo (hay una lista aparte más abajo) y ninguna partida sirve para las dos listas a la vez: no hay selección de capítulos, así que hace falta una partida dedicada para cada set.",
@@ -1147,6 +1160,7 @@ const GAMES = [
         },
       },
       {
+        trofeos: ["Pelícanos de manicomio"],
         titulo: "Monedas antiguas en dificultad Manicomio (33 monedas, ubicaciones DISTINTAS)",
         descripcion:
           "En Manicomio hay 33 monedas en vez de 18, y ninguna coincide exactamente con las de Fácil/Normal: varios objetos que antes eran armas o mejoras ahora están dentro de jaulas que se abren con monedas. Es la partida más exigente de las tres necesarias para el platino, así que conviene memorizar esta lista aparte.",
@@ -1191,6 +1205,7 @@ const GAMES = [
         },
       },
       {
+        trofeos: ["Y ya en ninguna parte", "Aquí, allí y en todas partes"],
         titulo: "Estatuillas Mr. Everywhere (20, para 'Y ya en ninguna parte')",
         descripcion:
           "Hay que destruirlas a golpes de cuchillo o disparo; a diferencia de las monedas y los documentos, los Mr. Everywhere sí se acumulan entre partidas, así que no hace falta conseguirlos todos de una sola vez.",
@@ -1238,6 +1253,7 @@ const GAMES = [
     perdibles: [],
     guias: [
       {
+        trofeos: ["El huerto de Iðunn", "Mal genio"],
         titulo: "Cofres de Nornir: cómo funcionan y ejemplos de solución",
         descripcion:
           "Hay 22 Cofres de Nornir repartidos por los Nueve Reinos, y entre todos guardan 9 Manzanas de Iðunn (suben la salud máxima) y 9 Cuernos de Hidromiel (suben la ira máxima) — de ahí que estos cofres sean clave para los trofeos \"El huerto de Iðunn\" y \"Mal genio\". Cada cofre está cerrado con tres sellos rúnicos, y alrededor hay tres marcas o mecanismos (campanas, ruedas, símbolos que hay que golpear con el hacha) que corresponden a esos mismos símbolos rúnicos escondidos por la zona; activar los tres correctos rompe los sellos y abre el cofre. Algunos ejemplos concretos:",
@@ -1252,6 +1268,7 @@ const GAMES = [
         },
       },
       {
+        trofeos: ["Padre Supremo cegado"],
         titulo: "Cuervos de Odín (Padre Supremo cegado)",
         descripcion:
           "Hay 51 cuervos de Odín escondidos por los Nueve Reinos, casi siempre posados en sitios altos (vigas, estatuas, ramas) donde no puedes acercarte a pie. Se matan lanzándoles el Hacha Leviatán; si fallas, tienes que ir a recogerla y volver a intentarlo, así que conviene apuntar bien antes de lanzar. No hay pista en pantalla de cuántos hay en cada zona: se recomienda revisar cada región con calma al terminar la historia y apoyarte en una guía en vídeo o mapa interactivo (\"God of War 2018 Odin's Ravens locations\") para no dejarte ninguno, ya que varios están bien escondidos en zonas opcionales u obligan a rodear el escenario para verlos.",
