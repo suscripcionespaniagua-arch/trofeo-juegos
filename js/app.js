@@ -1,11 +1,31 @@
 const TIER_LABEL = { bronce: "Bronce", plata: "Plata", oro: "Oro", platino: "Platino" };
 const TIER_ORDER = ["platino", "oro", "plata", "bronce"];
 const TIER_ICON = { bronce: "🥉", plata: "🥈", oro: "🥇", platino: "🏆" };
+const PROGRESS_PREFIX = "trofeos-platino:progress:";
 
 function countByTier(trofeos) {
   const counts = { bronce: 0, plata: 0, oro: 0, platino: 0 };
   trofeos.forEach((t) => counts[t.tier]++);
   return counts;
+}
+
+// Progreso del usuario (qué trofeos ya consiguió), guardado solo en su navegador.
+// No hay backend: cada dispositivo/navegador lleva su propio progreso.
+function getObtained(gameId) {
+  try {
+    const raw = localStorage.getItem(PROGRESS_PREFIX + gameId);
+    return raw ? new Set(JSON.parse(raw)) : new Set();
+  } catch (e) {
+    return new Set();
+  }
+}
+
+function saveObtained(gameId, obtainedSet) {
+  try {
+    localStorage.setItem(PROGRESS_PREFIX + gameId, JSON.stringify([...obtainedSet]));
+  } catch (e) {
+    // localStorage no disponible (privado/bloqueado): el progreso no persiste, pero la página sigue funcionando.
+  }
 }
 
 function renderGamesGrid() {
@@ -14,6 +34,9 @@ function renderGamesGrid() {
 
   GAMES.forEach((game) => {
     const counts = countByTier(game.trofeos);
+    const obtained = getObtained(game.id);
+    const obtainedCount = game.trofeos.filter((t) => obtained.has(t.nombre)).length;
+    const pct = Math.round((obtainedCount / game.trofeos.length) * 100);
     const card = document.createElement("a");
     card.className = "game-card";
     card.href = `juego.html?id=${encodeURIComponent(game.id)}`;
@@ -29,6 +52,10 @@ function renderGamesGrid() {
           <span class="pill oro"><span class="dot"></span>${counts.oro}</span>
           <span class="pill plata"><span class="dot"></span>${counts.plata}</span>
           <span class="pill bronce"><span class="dot"></span>${counts.bronce}</span>
+        </div>
+        <div class="progress-row">
+          <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+          <span class="progress-label">${obtainedCount}/${game.trofeos.length}</span>
         </div>
       </div>
     `;
@@ -58,6 +85,7 @@ function renderGamePage() {
   document.documentElement.style.setProperty("--game-color", game.color || "#7c5cff");
 
   const counts = countByTier(game.trofeos);
+  let obtained = getObtained(game.id);
 
   const header = document.createElement("div");
   header.innerHTML = `
@@ -80,6 +108,46 @@ function renderGamePage() {
     </div>
   `;
   container.appendChild(header);
+
+  const progressSection = document.createElement("div");
+  progressSection.className = "my-progress";
+  progressSection.innerHTML = `
+    <div class="my-progress-top">
+      <div>
+        <h2 class="section-title-big">Mi progreso</h2>
+        <p class="section-hint">Marca los trofeos que ya conseguiste. Se guarda solo en este navegador (no hay cuenta ni servidor detrás), así que si cambias de dispositivo o borras los datos del sitio, el progreso no te seguirá.</p>
+      </div>
+      <button type="button" class="reset-progress-btn">Reiniciar progreso</button>
+    </div>
+    <div class="progress-row big">
+      <div class="progress-bar"><div class="progress-fill" id="my-progress-fill"></div></div>
+      <span class="progress-label" id="my-progress-label"></span>
+    </div>
+  `;
+  container.appendChild(progressSection);
+
+  const progressFillEl = progressSection.querySelector("#my-progress-fill");
+  const progressLabelEl = progressSection.querySelector("#my-progress-label");
+
+  function updateProgressUI() {
+    const obtainedCount = game.trofeos.filter((t) => obtained.has(t.nombre)).length;
+    const pct = Math.round((obtainedCount / game.trofeos.length) * 100);
+    progressFillEl.style.width = pct + "%";
+    progressLabelEl.textContent = `${obtainedCount}/${game.trofeos.length} conseguidos (${pct}%)`;
+  }
+  updateProgressUI();
+
+  progressSection.querySelector(".reset-progress-btn").addEventListener("click", () => {
+    if (!confirm("¿Reiniciar el progreso de este juego? Esto solo afecta a este navegador.")) return;
+    obtained = new Set();
+    saveObtained(game.id, obtained);
+    updateProgressUI();
+    list.querySelectorAll(".trophy-card").forEach((card) => {
+      card.classList.remove("obtained");
+      const cb = card.querySelector(".trophy-checkbox");
+      if (cb) cb.checked = false;
+    });
+  });
 
   const missable = document.createElement("div");
   missable.className = "missable-section";
@@ -133,9 +201,13 @@ function renderGamePage() {
     game.trofeos
       .filter((t) => filterTier === "todos" || t.tier === filterTier)
       .forEach((t) => {
+        const isObtained = obtained.has(t.nombre);
         const card = document.createElement("div");
-        card.className = "trophy-card";
+        card.className = "trophy-card" + (isObtained ? " obtained" : "");
         card.innerHTML = `
+          <label class="trophy-check-wrap">
+            <input type="checkbox" class="trophy-checkbox" ${isObtained ? "checked" : ""} aria-label="Marcar ${t.nombre} como conseguido" />
+          </label>
           <div class="trophy-icon ${t.tier}">${TIER_ICON[t.tier]}</div>
           <div class="trophy-info">
             <h4>${t.nombre}</h4>
@@ -143,6 +215,16 @@ function renderGamePage() {
           </div>
           <div class="trophy-tier-label ${t.tier}">${TIER_LABEL[t.tier]}</div>
         `;
+        card.querySelector(".trophy-checkbox").addEventListener("change", (e) => {
+          if (e.target.checked) {
+            obtained.add(t.nombre);
+          } else {
+            obtained.delete(t.nombre);
+          }
+          saveObtained(game.id, obtained);
+          card.classList.toggle("obtained", e.target.checked);
+          updateProgressUI();
+        });
         list.appendChild(card);
       });
   }

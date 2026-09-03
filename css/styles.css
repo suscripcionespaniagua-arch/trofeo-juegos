@@ -148,6 +148,38 @@ main {
   color: var(--text-dim);
   font-size: 0.78rem;
 }
+
+.progress-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.progress-row.big {
+  margin-top: 4px;
+}
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--bg-elev-2);
+  overflow: hidden;
+}
+.progress-row.big .progress-bar {
+  height: 8px;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--platino), var(--accent));
+  border-radius: 999px;
+  transition: width 0.2s ease;
+}
+.progress-label {
+  font-size: 0.74rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
 .game-card .counts {
   display: flex;
   gap: 8px;
@@ -303,6 +335,65 @@ main {
   color: var(--text-dim);
   font-size: 0.87rem;
   line-height: 1.55;
+}
+
+.my-progress {
+  margin: 26px 0 6px;
+  padding: 16px 18px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.my-progress .section-title-big {
+  margin: 0 0 4px;
+}
+.my-progress .section-hint {
+  margin: 0;
+  max-width: 620px;
+}
+.my-progress-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.reset-progress-btn {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.reset-progress-btn:hover {
+  border-color: var(--oro);
+  color: var(--text);
+}
+
+.trophy-check-wrap {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+.trophy-checkbox {
+  width: 19px;
+  height: 19px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.trophy-card.obtained {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  background: color-mix(in srgb, var(--accent) 7%, var(--bg-elev));
+}
+.trophy-card.obtained .trophy-info h4 {
+  color: var(--text-dim);
+  text-decoration: line-through;
+  text-decoration-color: color-mix(in srgb, var(--text-dim) 60%, transparent);
 }
 
 .trophy-list {
