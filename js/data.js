@@ -516,6 +516,10 @@ const GAMES = [
           "El fantasma no se ve a simple vista al fotografiar: hay que disparar fotos por el escenario y luego revisar el álbum (Special > Album) en el menú principal; si capturaste al fantasma en alguna foto, ahí aparecerá la opción de exorcizarlo.",
           "Un punto fiable para intentarlo es el baño de la izquierda, en el pasillo que lleva a la sala de Psycho Mantis: apunta a la pared donde un guardia está orinando y dispara varias fotos desde ángulos distintos, porque el juego no siempre reconoce al fantasma a la primera.",
         ],
+        enlace: {
+          texto: "Ver guía completa en PowerPyx",
+          url: "https://www.powerpyx.com/metal-gear-solid-trophy-guide-roadmap/",
+        },
       },
     ],
     trofeos: [
@@ -605,6 +609,10 @@ const GAMES = [
           "Como los objetos especiales piden el número de chapas más bajo en las dificultades Muy Fácil y Fácil (50, 76, 80 y 120 según el objeto, siempre detalladas en \"perdibles\"), conviene reunirlas jugando esas dificultades desde el principio en vez de intentarlo en Normal o superiores.",
           "Hay 361 chapas en total repartidas entre las 5 dificultades y los dos capítulos (Carguero y Planta); el visor de chapas del menú principal indica cuáles te faltan y en qué zona aproximada están.",
         ],
+        enlace: {
+          texto: "Ver listado completo de chapas en IGN",
+          url: "https://www.ign.com/wikis/metal-gear-solid-2-sons-of-liberty/Dog_Tags_Guide",
+        },
       },
     ],
     trofeos: [
@@ -716,6 +724,10 @@ const GAMES = [
           "Dispara al Kerotan con cualquier arma para sumarlo a tu cuenta, no hace falta acercarte a recogerlo. El primero que encuentres da el trofeo \"Mi príncipe azul\" y el conjunto completo desbloquea \"Ranas por doquier\", además de dejar disponible el camuflaje Musgo en partidas posteriores con el mismo archivo de guardado.",
           "Si terminas el juego con alguno pendiente, repasa las zonas donde recuerdes no haber mirado bien hacia arriba o detrás de elementos del escenario: al ser uno por zona, saber cuántos llevas te dice exactamente cuántas áreas te quedan por revisar.",
         ],
+        enlace: {
+          texto: "Ver ubicación de los 64 Kerotan en metalgear.fandom.com",
+          url: "https://metalgear.fandom.com/wiki/Metal_Gear_Solid_3_Walkthrough/Kerotan_Frogs",
+        },
       },
     ],
     trofeos: [
@@ -848,6 +860,10 @@ const GAMES = [
           "El resto son de tipo miscelánea y se pueden ir sumando en cualquier partida sin dedicarle una aparte: 100 agarres de CQC, 150 disparos a la cabeza, 50 objetos entregados a soldados aliados, 50 registros de cuerpo, 50 retenciones a punta de pistola, una hora dentro de una caja o bidón, 100 páginas de la revista para adultos, 50 usos de la jeringuilla, una hora pegado a paredes, 100 rodadas boca abajo, 200 rodadas normales, una hora tumbado boca abajo, dos horas y media agachado, 400 objetos u armas recogidos, 10 \"subidones\" de combate (disparar 100 veces durante una alerta) y las 69 armas del juego.",
           "Para farmear bajas, alertas, agarres de CQC y raciones a la vez, ve al acto 1 (Ciudad Vieja de Oriente Medio): justo después de la escena con Johnny hay un punto a la izquierda donde la milicia salta sin parar desde un muro, y un poco más adelante otro donde los soldados llegan en oleadas desde un callejón hacia una barricada.",
         ],
+        enlace: {
+          texto: "Ver los 40 emblemas en PowerPyx",
+          url: "https://www.powerpyx.com/metal-gear-solid-4-guns-of-the-patriots-all-emblems-guide/",
+        },
       },
     ],
     trofeos: [
@@ -913,6 +929,10 @@ const GAMES = [
           "El veterano actor de doblaje: en la Operación Principal \"Misión de búsqueda de Zadornov 5\", detrás del camión, en la misma zona donde empieza la misión.",
           "Los 4 deben estar reclutados al mismo tiempo para que se desbloquee el trofeo: si despides a alguno sin querer, tendrás que volver a la misión correspondiente y extraerlo de nuevo.",
         ],
+        enlace: {
+          texto: "Ver guía completa en PowerPyx",
+          url: "https://www.powerpyx.com/metal-gear-solid-peace-walker-trophy-guide-roadmap/",
+        },
       },
     ],
     trofeos: [
