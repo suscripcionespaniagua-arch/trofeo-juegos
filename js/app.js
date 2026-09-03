@@ -175,6 +175,35 @@ function renderGamePage() {
   }
   container.appendChild(missable);
 
+  if (game.guias && game.guias.length > 0) {
+    const guides = document.createElement("div");
+    guides.className = "guides-section";
+    guides.innerHTML = `
+      <h2 class="section-title-big">🧩 Guías y coleccionables</h2>
+      <p class="section-hint">Códigos, ubicaciones y soluciones de acertijos para los trofeos que más cuesta encontrar por tu cuenta.</p>
+      <div class="guide-list">
+        ${game.guias
+          .map(
+            (g, i) => `
+          <details class="guide-block" ${i === 0 ? "open" : ""}>
+            <summary>${g.titulo}</summary>
+            <div class="guide-body">
+              ${g.descripcion ? `<p>${g.descripcion}</p>` : ""}
+              ${
+                g.items && g.items.length
+                  ? `<ol class="guide-items">${g.items.map((it) => `<li>${it}</li>`).join("")}</ol>`
+                  : ""
+              }
+            </div>
+          </details>
+        `
+          )
+          .join("")}
+      </div>
+    `;
+    container.appendChild(guides);
+  }
+
   const controlsRow = document.createElement("div");
   controlsRow.className = "controls-row";
   container.appendChild(controlsRow);
