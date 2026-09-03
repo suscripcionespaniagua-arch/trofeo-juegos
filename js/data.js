@@ -46,6 +46,10 @@ const GAMES = [
           "Venecia (Castello): detrás del arco del tejado del edificio blanco de la Scuola Grande di San Marco.",
           "Venecia (Castello): en el lado este del tejado de la Basílica de San Pietro di Castello.",
         ],
+        enlace: {
+          texto: "Ver mapa con capturas en TheGamer",
+          url: "https://www.thegamer.com/assassins-creed-2-glyph-location-puzzle-solution-guide/",
+        },
       },
       {
         titulo: "Ubicación de las 8 estatuillas de Monteriggioni",
@@ -61,11 +65,19 @@ const GAMES = [
           "Diana: bajo una ventana, detrás del puesto del médico.",
           "Apolo: en un tejado al norte del burdel, en la esquina suroeste del pueblo.",
         ],
+        enlace: {
+          texto: "Ver mapa con capturas en MapGenie",
+          url: "https://mapgenie.io/assassins-creed-2/maps/italy",
+        },
       },
       {
         titulo: "Las 100 plumas (En memoria de Petruccio)",
         descripcion:
           "Son 100 plumas repartidas por todo el mapa (aproximadamente 27 en Florencia, 4 en Monteriggioni, 11 en la Toscana, 12 en Romaña/Forlì y 46 en Venecia, que es con diferencia la ciudad con más). No se listan aquí una por una porque son demasiadas para que un texto plano sea útil: la forma más práctica de encontrarlas todas es ir ciudad por ciudad usando la Vista de Águila en los tejados y canales, y apoyarte en un mapa interactivo o vídeo-guía externo del tipo \"Assassin's Creed 2 feather locations map\", que marca las 100 sobre el mapa del juego. Se recogen automáticamente al pasar cerca (brillan en dorado) y el contador está en el menú de logros/estadísticas para saber cuántas te faltan por zona.",
+        enlace: {
+          texto: "Ver mapa interactivo con las 100 plumas en MapGenie",
+          url: "https://mapgenie.io/assassins-creed-2/maps/italy",
+        },
       },
     ],
     trofeos: [
@@ -1234,11 +1246,19 @@ const GAMES = [
           "Torre Vigía (Lago de los Nueve): las tres campanas están rodeadas de pinchos que hay que bajar lanzando el hacha a la rueda de madera cercana; luego hay que golpear las tres campanas casi a la vez para que suenen juntas y se abra el cofre.",
           "La Montaña (primer cofre, tras entrar): las runas no se ven directamente, pero están pintadas en rojo en las paredes como pista (\"B N R\"); hay que buscar y activar los mecanismos correspondientes a cada letra por la zona para que coincidan con esa pista.",
         ],
+        enlace: {
+          texto: "Ver mapa con capturas en Game8",
+          url: "https://game8.co/games/God-of-War-2018/archives/316582",
+        },
       },
       {
         titulo: "Cuervos de Odín (Padre Supremo cegado)",
         descripcion:
           "Hay 51 cuervos de Odín escondidos por los Nueve Reinos, casi siempre posados en sitios altos (vigas, estatuas, ramas) donde no puedes acercarte a pie. Se matan lanzándoles el Hacha Leviatán; si fallas, tienes que ir a recogerla y volver a intentarlo, así que conviene apuntar bien antes de lanzar. No hay pista en pantalla de cuántos hay en cada zona: se recomienda revisar cada región con calma al terminar la historia y apoyarte en una guía en vídeo o mapa interactivo (\"God of War 2018 Odin's Ravens locations\") para no dejarte ninguno, ya que varios están bien escondidos en zonas opcionales u obligan a rodear el escenario para verlos.",
+        enlace: {
+          texto: "Ver mapa con capturas en Game8",
+          url: "https://game8.co/games/God-of-War-2018/archives/317371",
+        },
       },
     ],
     trofeos: [
