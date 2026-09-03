@@ -506,6 +506,18 @@ const GAMES = [
           "Necesitas encontrar la cámara fotográfica (escondida en el hangar de tanques) y usarla para fotografiar a un fantasma oculto en el escenario antes de terminar esa partida; si no la consigues o no tomas la foto a tiempo, tienes que repetirlo en otra partida.",
       },
     ],
+    guias: [
+      {
+        titulo: "Dónde conseguir la cámara y fotografiar al fantasma",
+        descripcion:
+          "El trofeo \"Exorcista de fotos fantasma\" es el más críptico de la lista: ni la cámara ni el fantasma tienen ningún aviso en pantalla. Esto es lo que confirma la guía de PowerPyx para esta versión.",
+        items: [
+          "La cámara está en el hangar de tanques (B2): en cuanto puedas volver allí, baja hasta la sala donde luchaste contra Ocelot, cruza de nuevo el agujero que abriste en la pared y gira a la derecha; vuela otra pared y encontrarás la cámara en uno de los cuartos de ese pasillo, vigilado por dos cámaras de seguridad.",
+          "El fantasma no se ve a simple vista al fotografiar: hay que disparar fotos por el escenario y luego revisar el álbum (Special > Album) en el menú principal; si capturaste al fantasma en alguna foto, ahí aparecerá la opción de exorcizarlo.",
+          "Un punto fiable para intentarlo es el baño de la izquierda, en el pasillo que lleva a la sala de Psycho Mantis: apunta a la pared donde un guardia está orinando y dispara varias fotos desde ángulos distintos, porque el juego no siempre reconoce al fantasma a la primera.",
+        ],
+      },
+    ],
     trofeos: [
       { tier: "platino", nombre: "As de trofeos de MGS", desc: "Consigue todos los trofeos." },
       { tier: "bronce", nombre: "Iniciando misión", desc: "Empieza una partida nueva." },
@@ -580,6 +592,19 @@ const GAMES = [
         nombre: "Ah, eso lo explica todo…",
         razon:
           "Hay que fotografiar al marine sin pantalones y enviarle la foto a Otacon antes de fotografiar el Metal Gear RAY en esa misma sala. Si fotografías primero a RAY, ya no puedes conseguir este trofeo en esa partida.",
+      },
+    ],
+    guias: [
+      {
+        titulo: "Cómo conseguir chapas de identificación rápido",
+        descripcion:
+          "Las chapas son el coleccionable clave del juego: hacen falta para la bandana y los dos trajes de camuflaje (ver \"perdibles\"). El mecanismo es siempre el mismo, según la guía de chapas de IGN.",
+        items: [
+          "Para robar una chapa, sorprende a un guardia por la espalda sin que te vea y apúntale con el arma (mantén pulsado L1) para que se rinda; luego rodéalo por delante, sigue apuntando y encáralo a la cabeza o a la entrepierna hasta que suelte la chapa. Con las gafas térmicas puedes comprobar de lejos quién lleva una (se ve un brillo en el cuello).",
+          "Algunos guardias no se rinden a la primera: dispárales una vez en la mano o en el pie con el arma que llevas apuntada para que se lo tomen en serio (si el arma está descargada, notarán el farol y sacarán la suya).",
+          "Como los objetos especiales piden el número de chapas más bajo en las dificultades Muy Fácil y Fácil (50, 76, 80 y 120 según el objeto, siempre detalladas en \"perdibles\"), conviene reunirlas jugando esas dificultades desde el principio en vez de intentarlo en Normal o superiores.",
+          "Hay 361 chapas en total repartidas entre las 5 dificultades y los dos capítulos (Carguero y Planta); el visor de chapas del menú principal indica cuáles te faltan y en qué zona aproximada están.",
+        ],
       },
     ],
     trofeos: [
@@ -679,6 +704,18 @@ const GAMES = [
         nombre: "FOXHOUND",
         razon:
           "Es una carrera contrarreloj obligatoria en dificultad Extrema (o Extrema Europea), independiente de la partida de coleccionables: hay que terminar el juego en menos de 5 horas, con 25 guardados o menos, sin continuar, sin objetos especiales, sin activar ninguna alerta y sin matar a nadie. Si fallas cualquiera de esos requisitos en el camino, tienes que reiniciar la carrera completa desde el principio.",
+      },
+    ],
+    guias: [
+      {
+        titulo: "Los 64 Kerotan",
+        descripcion:
+          "El trofeo \"Ranas por doquier\" pide encontrar las 64 ranas de goma escondidas por el mapa. Son demasiadas para listar una a una, pero la regla que sigue su reparto (documentada en metalgear.fandom.com) hace la búsqueda mucho más manejable.",
+        items: [
+          "Cada zona única del mapa, tanto en la Misión Virtuosa como en Operación Snake Eater, esconde exactamente un Kerotan, con la única excepción de las Cloacas de Groznyj Grad, que no tiene ninguno. Basta con explorar a fondo cada zona nueva (árboles, rocas, estatuas, salientes) para no dejarte ninguna por el camino.",
+          "Dispara al Kerotan con cualquier arma para sumarlo a tu cuenta, no hace falta acercarte a recogerlo. El primero que encuentres da el trofeo \"Mi príncipe azul\" y el conjunto completo desbloquea \"Ranas por doquier\", además de dejar disponible el camuflaje Musgo en partidas posteriores con el mismo archivo de guardado.",
+          "Si terminas el juego con alguno pendiente, repasa las zonas donde recuerdes no haber mirado bien hacia arriba o detrás de elementos del escenario: al ser uno por zona, saber cuántos llevas te dice exactamente cuántas áreas te quedan por revisar.",
+        ],
       },
     ],
     trofeos: [
@@ -799,6 +836,20 @@ const GAMES = [
           "Solo se consigue en la Zona Roja del acto 1, subiéndote al pedestal con dos estatuas y pulsando el botón de camuflaje para que Snake rompa sin querer la pieza más importante de una de ellas. Es un gesto muy concreto y fácil de pasar de largo si no sabes que está ahí.",
       },
     ],
+    guias: [
+      {
+        titulo: "Los 40 emblemas y cómo repartirlos entre partidas",
+        descripcion:
+          "\"Ecos del campo de batalla\" exige los 40 emblemas del juego (la canción \"Snake Eater\" del iPod es la recompensa por completarlos todos) y es el motivo real de que el platino pida un mínimo de 8 partidas. Según la guía de emblemas de PowerPyx publicada el mismo día del lanzamiento de esta versión, conviene repartir las condiciones entre partidas en vez de perseguir cada emblema por separado, porque muchos comparten requisitos.",
+        items: [
+          "Los emblemas de sigilo más exigentes (equivalentes a los rangos Big Boss, Fox Hound, Fox y Hound) piden terminar el juego sin morir, con muy pocas alertas, sin matar a nadie, sin objetos de recuperación, sin traje sigiloso ni bandana, y por debajo de un límite de tiempo de entre 5 y 6,5 horas según el rango. Consiguiendo el más duro (equivalente a Big Boss, en la dificultad más alta) los otros tres de esa familia se dan por conseguidos igual.",
+          "Hay una partida pacifista obligatoria sin matar a ningún humano (los Gekko y los planeadores no cuentan) y otra opuesta muy violenta, con más de 50 aturdimientos con cuchillo, 50 agarres de CQC y 25 alertas o menos; son incompatibles entre sí, así que hacen falta partidas separadas para cada una.",
+          "Otro grupo de 8 emblemas depende solo de tus estadísticas acumuladas al terminar la partida: si tuviste más o menos de 75 alertas, más o menos de 250 bajas y más o menos de 25 continues. Cada partida te da automáticamente uno de los ocho según cómo la hayas jugado, así que basta con variar el estilo entre partidas y llevar la cuenta para cubrirlos todos.",
+          "El resto son de tipo miscelánea y se pueden ir sumando en cualquier partida sin dedicarle una aparte: 100 agarres de CQC, 150 disparos a la cabeza, 50 objetos entregados a soldados aliados, 50 registros de cuerpo, 50 retenciones a punta de pistola, una hora dentro de una caja o bidón, 100 páginas de la revista para adultos, 50 usos de la jeringuilla, una hora pegado a paredes, 100 rodadas boca abajo, 200 rodadas normales, una hora tumbado boca abajo, dos horas y media agachado, 400 objetos u armas recogidos, 10 \"subidones\" de combate (disparar 100 veces durante una alerta) y las 69 armas del juego.",
+          "Para farmear bajas, alertas, agarres de CQC y raciones a la vez, ve al acto 1 (Ciudad Vieja de Oriente Medio): justo después de la escena con Johnny hay un punto a la izquierda donde la milicia salta sin parar desde un muro, y un poco más adelante otro donde los soldados llegan en oleadas desde un callejón hacia una barricada.",
+        ],
+      },
+    ],
     trofeos: [
       { tier: "platino", nombre: "El héroe legendario", desc: "Has obtenido todos los trofeos." },
       { tier: "bronce", nombre: "Sol Líquido", desc: "Has completado el acto 1 (Oriente Medio)." },
@@ -850,6 +901,20 @@ const GAMES = [
     resumen:
       "Big Boss funda a las Militaires Sans Frontières en Costa Rica en 1974 para investigar la aparición de un misterioso Metal Gear bípedo, el Peace Walker, en una historia que sienta las bases de Cipher y de la saga posterior. Reutiliza el contenido de Peace Walker HD Edition pero le quita todos los trofeos ligados al multijugador online (comerciar, repartir objetos, jugar Operaciones de Enfrentamiento) y añade varios nuevos jugables en solitario, incluido capturar todos los vehículos a la vez. El platino gira en torno a mejorar el personal de la Mother Base para conseguir el equipo necesario y sacar rango S en absolutamente todas las Operaciones Principales y Adicionales. Datos de horas/dificultad tomados de la guía de PowerPyx publicada el mismo día del lanzamiento de esta versión (26 de agosto de 2026), que confirma además que no hay ningún trofeo perdible: todas las misiones se pueden rejugar libremente después de terminar la historia.",
     perdibles: [],
+    guias: [
+      {
+        titulo: "Dónde están los 4 miembros del personal especial",
+        descripcion:
+          "\"Jefe de personal\" pide tener reclutados a los 4 personajes especiales del juego a la vez (uno de ellos es el propio Hideo Kojima, con trofeo aparte). No es perdible porque las misiones se pueden rejugar, pero conviene saber dónde están para no perder tiempo buscando. Ubicaciones según la guía de PowerPyx para esta versión.",
+        items: [
+          "Hideo Kojima: en la Operación Principal \"Infiltra en la base del cráter\", al final de la misión, junto a la hilera de camiones; está escondido en el camión con la matrícula 63824.",
+          "La actriz: en la Operación Principal \"Viaja a la base de la mina\". Sube por la primera escalera a la izquierda nada más empezar, cuélgate del borde del edificio de la izquierda y desplázate lateralmente hasta el otro extremo para extraer a la prisionera.",
+          "El nuevo actor de doblaje: en la Operación Principal \"Misión de búsqueda de Zadornov\", en la zona del cobertizo de clasificación de Bananal Fruta de Oro; está en la parte trasera del cobertizo grande, o en el cobertizo pequeño al otro lado de la valla.",
+          "El veterano actor de doblaje: en la Operación Principal \"Misión de búsqueda de Zadornov 5\", detrás del camión, en la misma zona donde empieza la misión.",
+          "Los 4 deben estar reclutados al mismo tiempo para que se desbloquee el trofeo: si despides a alguno sin querer, tendrás que volver a la misión correspondiente y extraerlo de nuevo.",
+        ],
+      },
+    ],
     trofeos: [
       { tier: "platino", nombre: "Vic Boss", desc: "Has obtenido todos los trofeos." },
       { tier: "bronce", nombre: "Un ejército sin fronteras", desc: "Has completado el prólogo: \"Un ejército sin fronteras\"." },
