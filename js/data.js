@@ -200,6 +200,10 @@ const GAMES = [
           "Misión 17, en el puente roto: primero hay que cruzarlo de un extremo a otro sin caer al agua para activar la misión; dentro, usa los chorros de agua del Death Scythe para llegar al orbe azul en el aire esquivando sus ataques.",
           "Misión 21, en la sala oculta tras el muro opuesto a la Estatua del Tiempo: recorre el pasillo (con un par de Nobodys), recoge el último fragmento de orbe azul y, en la sala final, golpea con armas cuerpo a cuerpo la cabeza del dragón (es inmune a las armas de fuego); tras derrotarlo aparecen 2 Frost, y al vencerlos se obtiene el Brazalete Oculto.",
         ],
+        enlace: {
+          texto: "Ver mapa y capturas de cada misión secreta en Devil May Cry Wiki",
+          url: "https://devilmaycry.fandom.com/wiki/Devil_May_Cry_Blue_Orb_Fragment_Locations",
+        },
       },
     ],
   },
@@ -257,6 +261,10 @@ const GAMES = [
         titulo: "Dónde encontrar una misión secreta (para 'Un secreto desvelado')",
         descripcion:
           "A diferencia del resto de la saga, aquí las misiones secretas son simples salas de combate contra oleadas de enemigos, y sus puertas de entrada son indistinguibles del resto del escenario. Solo hace falta superar UNA, con Dante o con Lucia, en cualquier dificultad, así que basta con ir a por la primera disponible. Con Dante, en la Misión 1 (la calle donde aparecen los Puia por primera vez) hay dos entradas: examina la puerta grande de esa zona, o sigue la calle hasta un edificio pequeño que bloquea el paso, sáltalo y examina su cara opuesta.",
+        enlace: {
+          texto: "Ver ubicaciones de las salas secretas de Dante en Devil May Cry Wiki",
+          url: "https://devilmaycry.fandom.com/wiki/Devil_May_Cry_2_walkthrough/Secret_Rooms_D",
+        },
       },
     ],
   },
@@ -328,6 +336,10 @@ const GAMES = [
           "Misión 17, en 'Pitch Black Void': sube las escaleras de la izquierda y salta a las vigas de arriba; la del medio de la fila inferior tiene una estatua brillante, examínala. Objetivo: esquiva los pinchos que salen del suelo y llega hasta el orbe azul del final.",
           "Misión 18, en 'Road to Despair': a la izquierda de la estatua del pie gigante (lado opuesto al pedestal de orbe rojo). Objetivo: llega al fragmento de orbe azul del nivel superior saltando entre plataformas móviles que entran y salen de la pared.",
         ],
+        enlace: {
+          texto: "Ver mapa y capturas de cada misión secreta en Devil May Cry Wiki",
+          url: "https://devilmaycry.fandom.com/wiki/Devil_May_Cry_3_Blue_Orb_Fragment_Locations",
+        },
       },
     ],
   },
@@ -440,6 +452,10 @@ const GAMES = [
           "Misión 16 ('Inferno'): entre dos estatuas situadas al final de sendos pasillos; hay que apuntar con precisión el láser de Pandora (necesitas el archivo Revenge de Pandora). Objetivo: destruir ambas estatuas a distancia con el láser.",
           "Misión 17, justo antes de llegar a la Plaza de Fortuna: hay un bote de basura junto a un contenedor a la derecha del camino; destrúyelo para revelar el sello oculto. Objetivo: atraviesa un corredor de láseres sin recibir ningún daño.",
         ],
+        enlace: {
+          texto: "Ver mapa y capturas de cada misión secreta en Devil May Cry Wiki",
+          url: "https://devilmaycry.fandom.com/wiki/Devil_May_Cry_4_Blue_Orb_Fragment_Locations",
+        },
       },
     ],
   },
@@ -1113,6 +1129,10 @@ const GAMES = [
           "Dentro de una caja fuerte con ganzúa en la Sala de Control del Barco 3F (la ganzúa está en la sala del Eje, también en 3F).",
           "Dentro de una caja sellada (necesita líquido Corrosivo) en el pasillo noreste, cerca de la Sala de Máquinas nº1 del Barco S2, durante la persecución de Molded hacia la Bodega de Carga.",
         ],
+        enlace: {
+          texto: "Ver mapa interactivo de las monedas (Normal) en Evil Resource",
+          url: "https://www.evilresource.com/resident-evil-7/items/antique-coin",
+        },
       },
       {
         titulo: "Monedas antiguas en dificultad Manicomio (33 monedas, ubicaciones DISTINTAS)",
@@ -1153,6 +1173,10 @@ const GAMES = [
           "Barco Encallado S2: de vuelta como Ethan, escapando del barco, en el escritorio a la derecha de la puerta de la valla de malla.",
           "Pantano: tras escapar del barco y saltar el tronco bajo que bloquea el paso, busca junto al borde derecho del agua del pantano.",
         ],
+        enlace: {
+          texto: "Ver mapa interactivo de las monedas (pestaña Madhouse) en Evil Resource",
+          url: "https://www.evilresource.com/resident-evil-7/items/antique-coin",
+        },
       },
       {
         titulo: "Estatuillas Mr. Everywhere (20, para 'Y ya en ninguna parte')",
@@ -1180,6 +1204,10 @@ const GAMES = [
           "Mirando hacia abajo desde delante de unos barriles, en el lado sur de las Minas de Sal B3.",
           "En una estantería vacía de la Sala de Almacén B1, de vuelta en la Casa de Invitados (la última, cierra la colección).",
         ],
+        enlace: {
+          texto: "Ver mapa interactivo de las estatuillas Mr. Everywhere en Evil Resource",
+          url: "https://www.evilresource.com/resident-evil-7/miscellaneous-objects/mr-everywhere",
+        },
       },
     ],
   },
