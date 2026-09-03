@@ -293,13 +293,24 @@ main {
   color: var(--text-dim);
 }
 .sort-select {
-  background: var(--bg-elev);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bg-elev);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' fill='none' stroke='%239aa0b4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
   border: 1px solid var(--border);
   color: var(--text);
-  padding: 6px 10px;
+  padding: 6px 28px 6px 10px;
   border-radius: 8px;
   font-size: 0.82rem;
   cursor: pointer;
+  min-height: 32px;
+}
+.sort-select option {
+  background: var(--bg-elev);
+  color: var(--text);
 }
 .sort-select:focus {
   outline: none;
