@@ -19,6 +19,55 @@ const GAMES = [
           "Hay que dar una patada a un guardia mientras vuelas en la máquina voladora de Leonardo. Solo puedes usarla durante la misión de la Secuencia 8 en la que aparece; una vez que avanzas la historia no vuelves a tener acceso a ella (salvo que tengas el DLC \"La Batalla de Forlì\", que la deja disponible libremente).",
       },
     ],
+    guias: [
+      {
+        titulo: "Ubicación de los 20 glifos (vídeo del Sujeto 16)",
+        descripcion:
+          "Cada glifo se encuentra con la Vista de Águila y, al activarlo, lanza uno de los 20 acertijos que forman \"La Verdad\". Los acertijos van en un orden fijo sin importar en qué orden encuentres los glifos, así que basta con ir localizándolos según pasees por cada ciudad. Ubicación aproximada de cada uno:",
+        items: [
+          "Florencia (San Marco): en el muro norte del tejado de Santa Croce.",
+          "Florencia (San Marco): en el tejado más alto del edificio de La Rosa Colta.",
+          "Florencia (San Marco): en el lado sur del tejado del Ospedale degli Innocenti.",
+          "Florencia (Santa Maria Novella): al noreste de la iglesia de San Lorenzo, al pie de un campanario.",
+          "Florencia (Santa Maria Novella): al noreste del Mercato Vecchio, junto a una ventana saliente cerca de un arco.",
+          "Toscana (Monteriggioni): en lo más alto de la zona sur de la villa principal.",
+          "Toscana (San Gimignano): al final del pasillo del claustro, lado izquierdo de la Santa Maria Assunta.",
+          "Toscana (San Gimignano): en el hueco entre las torres de Torri dei Salvucci, pared izquierda.",
+          "Toscana (San Gimignano): en lo más alto de la Torre dei Diavoli.",
+          "Toscana (campiña): en la base de la torre más alta de Monte Oliveto Maggiore.",
+          "Toscana (campiña): dentro del túnel del Antico Teatro Romano, pared izquierda.",
+          "Romaña (Forlì): en la torre del Avamposto Veneciano, en el muro que mira al mar, en lo más alto.",
+          "Romaña (Forlì): sobre uno de los arcos a la derecha de la torre de la Abadía de San Mercuriale.",
+          "Venecia (San Polo): junto a la cúpula de San Giacomo di Rialto, lado derecho.",
+          "Venecia (San Polo): nadando bajo el edificio al este del Ponte di Rialto, en la pared sumergida.",
+          "Venecia (San Polo): en el tejado del gremio de ladrones de Venecia, junto a una ventana.",
+          "Venecia (San Marco): en el tejado de la Torre dell'Orologio.",
+          "Venecia (San Marco): en el tejado del Campanile di San Marco, frente a la Torre dell'Orologio.",
+          "Venecia (Castello): detrás del arco del tejado del edificio blanco de la Scuola Grande di San Marco.",
+          "Venecia (Castello): en el lado este del tejado de la Basílica de San Pietro di Castello.",
+        ],
+      },
+      {
+        titulo: "Ubicación de las 8 estatuillas de Monteriggioni",
+        descripcion:
+          "Son cuatro parejas de estatuas romanas (Marte y Venus, Júpiter y Plutón, Neptuno y Minerva, Diana y Apolo) escondidas por el pueblo de Monteriggioni. Colocarlas en sus cuatro pedestales del patio de la villa da 8.000 florines además del trofeo.",
+        items: [
+          "Venus: en un muro al suroeste de la entrada de la villa, sobre un andamio de madera.",
+          "Marte: en un muro al suroeste de la entrada de la villa, cerca de la estatua de Venus.",
+          "Plutón: en la esquina sureste del patio, enfrente de donde está Marte.",
+          "Neptuno: junto a un árbol, detrás del herrero.",
+          "Júpiter: en el muro trasero de la iglesia, sobre una ventana.",
+          "Minerva: en el tejado, detrás de la tienda de arte.",
+          "Diana: bajo una ventana, detrás del puesto del médico.",
+          "Apolo: en un tejado al norte del burdel, en la esquina suroeste del pueblo.",
+        ],
+      },
+      {
+        titulo: "Las 100 plumas (En memoria de Petruccio)",
+        descripcion:
+          "Son 100 plumas repartidas por todo el mapa (aproximadamente 27 en Florencia, 4 en Monteriggioni, 11 en la Toscana, 12 en Romaña/Forlì y 46 en Venecia, que es con diferencia la ciudad con más). No se listan aquí una por una porque son demasiadas para que un texto plano sea útil: la forma más práctica de encontrarlas todas es ir ciudad por ciudad usando la Vista de Águila en los tejados y canales, y apoyarte en un mapa interactivo o vídeo-guía externo del tipo \"Assassin's Creed 2 feather locations map\", que marca las 100 sobre el mapa del juego. Se recogen automáticamente al pasar cerca (brillan en dorado) y el contador está en el menú de logros/estadísticas para saber cuántas te faltan por zona.",
+      },
+    ],
     trofeos: [
       { tier: "platino", nombre: "Maestro asesino", desc: "Desbloquear todos los demás trofeos del juego." },
 
@@ -898,6 +947,23 @@ const GAMES = [
     resumen:
       "Kratos y su hijo Atreus recorren los Nueve Reinos nórdicos para esparcir las cenizas de Faye desde la montaña más alta, mientras el pasado sangriento del propio Kratos empieza a darles caza. Es uno de los platinos más amables de los grandes exclusivos de PlayStation: sin trofeos perdibles ni relacionados con la dificultad, solo pide completar la historia, limpiar el más de un centenar de coleccionables (bien señalados en el mapa) y derrotar a las nueve valquirias, con su exigente reina como colofón.",
     perdibles: [],
+    guias: [
+      {
+        titulo: "Cofres de Nornir: cómo funcionan y ejemplos de solución",
+        descripcion:
+          "Hay 22 Cofres de Nornir repartidos por los Nueve Reinos, y entre todos guardan 9 Manzanas de Iðunn (suben la salud máxima) y 9 Cuernos de Hidromiel (suben la ira máxima) — de ahí que estos cofres sean clave para los trofeos \"El huerto de Iðunn\" y \"Mal genio\". Cada cofre está cerrado con tres sellos rúnicos, y alrededor hay tres marcas o mecanismos (campanas, ruedas, símbolos que hay que golpear con el hacha) que corresponden a esos mismos símbolos rúnicos escondidos por la zona; activar los tres correctos rompe los sellos y abre el cofre. Algunos ejemplos concretos:",
+        items: [
+          "Bosque Salvaje (primer cofre del juego): junto a una tumba en las ruinas del cruce de caminos. Las tres runas están cerca: una a la derecha de la tumba, otra dentro de un ataúd pequeño a la izquierda, y la tercera detrás de unas rocas y arbustos junto a las escaleras.",
+          "Torre Vigía (Lago de los Nueve): las tres campanas están rodeadas de pinchos que hay que bajar lanzando el hacha a la rueda de madera cercana; luego hay que golpear las tres campanas casi a la vez para que suenen juntas y se abra el cofre.",
+          "La Montaña (primer cofre, tras entrar): las runas no se ven directamente, pero están pintadas en rojo en las paredes como pista (\"B N R\"); hay que buscar y activar los mecanismos correspondientes a cada letra por la zona para que coincidan con esa pista.",
+        ],
+      },
+      {
+        titulo: "Cuervos de Odín (Padre Supremo cegado)",
+        descripcion:
+          "Hay 51 cuervos de Odín escondidos por los Nueve Reinos, casi siempre posados en sitios altos (vigas, estatuas, ramas) donde no puedes acercarte a pie. Se matan lanzándoles el Hacha Leviatán; si fallas, tienes que ir a recogerla y volver a intentarlo, así que conviene apuntar bien antes de lanzar. No hay pista en pantalla de cuántos hay en cada zona: se recomienda revisar cada región con calma al terminar la historia y apoyarte en una guía en vídeo o mapa interactivo (\"God of War 2018 Odin's Ravens locations\") para no dejarte ninguno, ya que varios están bien escondidos en zonas opcionales u obligan a rodear el escenario para verlos.",
+      },
+    ],
     trofeos: [
       { tier: "platino", nombre: "Padre e hijo", desc: "Obtén el resto de los trofeos." },
 
