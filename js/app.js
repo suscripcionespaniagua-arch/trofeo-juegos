@@ -142,11 +142,7 @@ function renderGamePage() {
     obtained = new Set();
     saveObtained(game.id, obtained);
     updateProgressUI();
-    list.querySelectorAll(".trophy-card").forEach((card) => {
-      card.classList.remove("obtained");
-      const cb = card.querySelector(".trophy-checkbox");
-      if (cb) cb.checked = false;
-    });
+    renderList();
   });
 
   const missable = document.createElement("div");
@@ -179,6 +175,10 @@ function renderGamePage() {
   }
   container.appendChild(missable);
 
+  const controlsRow = document.createElement("div");
+  controlsRow.className = "controls-row";
+  container.appendChild(controlsRow);
+
   const filters = document.createElement("div");
   filters.className = "filters";
   const tiersPresent = TIER_ORDER.filter((t) => counts[t] > 0);
@@ -190,17 +190,36 @@ function renderGamePage() {
           `<button class="filter-btn" data-tier="${t}"><span class="dot"></span>${TIER_LABEL[t]} (${counts[t]})</button>`
       )
       .join("");
-  container.appendChild(filters);
+  controlsRow.appendChild(filters);
+
+  const sortWrap = document.createElement("div");
+  sortWrap.className = "sort-wrap";
+  sortWrap.innerHTML = `
+    <label class="sort-label" for="sort-select">Ordenar</label>
+    <select id="sort-select" class="sort-select">
+      <option value="original">Orden original</option>
+      <option value="pendientes">No conseguidos primero</option>
+      <option value="conseguidos">Conseguidos primero</option>
+    </select>
+  `;
+  controlsRow.appendChild(sortWrap);
 
   const list = document.createElement("div");
   list.className = "trophy-list";
   container.appendChild(list);
 
-  function renderList(filterTier) {
+  let currentFilter = "todos";
+  let currentSort = "original";
+
+  function renderList() {
     list.innerHTML = "";
-    game.trofeos
-      .filter((t) => filterTier === "todos" || t.tier === filterTier)
-      .forEach((t) => {
+    let trofeos = game.trofeos.filter((t) => currentFilter === "todos" || t.tier === currentFilter);
+    if (currentSort === "pendientes") {
+      trofeos = trofeos.slice().sort((a, b) => (obtained.has(a.nombre) ? 1 : 0) - (obtained.has(b.nombre) ? 1 : 0));
+    } else if (currentSort === "conseguidos") {
+      trofeos = trofeos.slice().sort((a, b) => (obtained.has(b.nombre) ? 1 : 0) - (obtained.has(a.nombre) ? 1 : 0));
+    }
+    trofeos.forEach((t) => {
         const isObtained = obtained.has(t.nombre);
         const card = document.createElement("div");
         card.className = "trophy-card" + (isObtained ? " obtained" : "");
@@ -229,14 +248,20 @@ function renderGamePage() {
       });
   }
 
-  renderList("todos");
+  renderList();
 
   filters.addEventListener("click", (e) => {
     const btn = e.target.closest(".filter-btn");
     if (!btn) return;
     filters.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
-    renderList(btn.dataset.tier);
+    currentFilter = btn.dataset.tier;
+    renderList();
+  });
+
+  sortWrap.querySelector("#sort-select").addEventListener("change", (e) => {
+    currentSort = e.target.value;
+    renderList();
   });
 }
 
