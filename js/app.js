@@ -194,6 +194,13 @@ function renderGamePage() {
                   ? `<ol class="guide-items">${g.items.map((it) => `<li>${it}</li>`).join("")}</ol>`
                   : ""
               }
+              ${
+                g.enlace && g.enlace.url
+                  ? `<a class="guide-link" href="${g.enlace.url}" target="_blank" rel="noopener noreferrer">🗺️ ${
+                      g.enlace.texto || "Ver mapa con capturas en la guía original"
+                    } →</a>`
+                  : ""
+              }
             </div>
           </details>
         `
