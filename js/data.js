@@ -143,6 +143,127 @@ const GAMES = [
   },
 
   {
+    id: "assassins-creed-3-remastered",
+    titulo: "Assassin's Creed III",
+    saga: "Assassin's Creed",
+    anio: 2012,
+    plataformas: "PS4 · Xbox One · Switch · PC (Assassin's Creed III: Remastered, 2019)",
+    horasPlatino: 55,
+    dificultad: 5,
+    color: "#1e3a5f",
+    resumen:
+      "Connor Kenway recorre la Guerra de Independencia de Estados Unidos entre Boston, Nueva York y la Frontera, mientras en el presente Desmond Miles se acerca al final de su propia historia. La versión Remasterizada de 2019 eliminó los trofeos perdibles que hicieron famoso al juego original de PS3: ahora se puede volver a cualquier secuencia o misión en cualquier momento, así que el platino consiste en conseguir el 100% de sincronización en las 12 secuencias principales, completar la extensa lista de coleccionables (almanaques, fichas de Peg Leg, misiones navales, contratos de corso, clubes) y terminar al 100% las tres expansiones de La Tiranía del Rey Washington.",
+    perdibles: [],
+    guias: [
+      {
+        trofeos: ["Ha perdido los papeles", "Completista"],
+        titulo: "Ubicación de las 36 páginas de almanaque",
+        descripcion:
+          "Hay 20 páginas en Boston y 16 en Nueva York, repartidas en 9 almanaques de Benjamin Franklin (4 páginas cada uno). Al acercarte a una empieza a volar y hay que perseguirla corriendo/parkour hasta alcanzarla; si escapa, reaparece pasado un rato en el mismo sitio. Conseguir un solo almanaque completo (sus 4 páginas) ya da el trofeo 'Ha perdido los papeles', pero 'Completista' exige las 36. Se puede comprar un mapa de cada distrito en la tienda general del juego para verlas marcadas.",
+        enlace: {
+          texto: "Ver mapa con las 36 ubicaciones en PowerPyx",
+          url: "https://www.powerpyx.com/guide/assassins-creed-3-all-almanac-locations.html",
+        },
+      },
+      {
+        trofeos: ["Kidd de supervivencia"],
+        titulo: "Ubicación de las 24 fichas de Peg Leg",
+        descripcion:
+          "Están repartidas entre Boston, la Hacienda y la Frontera, en posiciones fijas. Hay que devolvérselas una a una al propio Peg Leg, sentado en el muelle de la Hacienda, para avanzar en su misión secundaria; al entregar las 24 se desbloquean las 4 misiones de Kidd que dan el trofeo. También se puede comprar un mapa con todas las ubicaciones en la tienda general.",
+        enlace: {
+          texto: "Ver mapa con las 24 ubicaciones en PowerPyx",
+          url: "https://www.powerpyx.com/guide/assassins-creed-3-all-peg-leg-trinket-locations.html",
+        },
+      },
+      {
+        trofeos: ["Un hombre extraordinario"],
+        titulo: "Qué escanear para la Enciclopedia del hombre corriente",
+        descripcion:
+          "Disponible desde la secuencia 6 (misión de Achilles). Hay que apuntar unos segundos con la cámara a cada residente de la Hacienda mientras realiza una actividad concreta de su oficio; cada actividad distinta cuenta como una entrada. Si te falta alguna al terminar el juego, aléjate de la Hacienda unos minutos (a una ciudad o a caballo por la Frontera) y vuelve para que los residentes repitan otras tareas.",
+        items: [
+          "Herrero (Dave): afilar un hacha en la piedra de amolar, poner herraduras, usar el horno, reparar la rueda de una carreta.",
+          "Médico (Lyle): atender las hierbas detrás de su casa, leer sobre un tocón, jugar a la bocha con un leñador.",
+          "Granjeros (Warren y Prudence): arar el campo, ordeñar una vaca, cortar trigo, verter grano.",
+          "Cazadora (Myriam): limpiar su mosquete, asar un animal, disparar el mosquete en una cacería, abrir una trampa para osos.",
+          "Posaderos (Oliver y Corrine): cortar carne, dar vueltas al asador, cargar heno con una horca, vigilar el ganado que muele trigo, azotar a un toro.",
+          "Leñadores (Godfrey y Terry): serrar madera entre los dos con una sierra grande, cortar leña juntos, cargar madera en una carreta (se puede escanear a Diana usando la mantequera como una de las tres tareas si cuesta pillar a los dos a la vez).",
+          "Minero (Norris): encender una lámpara en la entrada de la mina, picar con el pico dentro, cribar oro en el río.",
+          "Sastre (Ellen): examinar una silla, lavar ropa, tomar la medida de un vestido, coser sentada.",
+          "Carpintero (Lance): revisar la valla, lijar un tablón, lijar una silla, escribir en el libro de registro durante una auditoría.",
+        ],
+        enlace: {
+          texto: "Ver la guía completa del trofeo en PowerPyx",
+          url: "https://www.powerpyx.com/assassins-creed-3-remastered-trophy-guide-roadmap/",
+        },
+      },
+    ],
+    trofeos: [
+      { tier: "platino", nombre: "Maestro Asesino", desc: "Consigue todos los trofeos." },
+
+      { tier: "bronce", nombre: "Duro despertar", desc: "Vuelve a entrar en el Animus." },
+      { tier: "bronce", nombre: "Queridísimo papá", desc: "Completa el estadio (en el presente)." },
+      { tier: "bronce", nombre: "Cruzarse con Cross", desc: "Completa el rascacielos (en el presente)." },
+      { tier: "bronce", nombre: "El fin está cerca", desc: "Completa Abstergo (en el presente)." },
+      { tier: "bronce", nombre: "Toda buena obra tiene su castigo", desc: "Abre la puerta del templo y descubre el destino de Desmond." },
+      { tier: "bronce", nombre: "Invitado misterioso", desc: "Completa las secuencias 1 y 2." },
+      { tier: "bronce", nombre: "El viaje da su Fruto", desc: "Completa la secuencia 3." },
+      { tier: "bronce", nombre: "El nacimiento de un héroe", desc: "Completa la secuencia 4." },
+      { tier: "bronce", nombre: "El día que el templario lloró", desc: "Completa la secuencia 5." },
+      { tier: "bronce", nombre: "El té es para los ingleses", desc: "Completa la secuencia 6." },
+      { tier: "bronce", nombre: "Ver el blanco de sus ojos", desc: "Completa la secuencia 7." },
+      { tier: "bronce", nombre: "Lobo enjaulado", desc: "Completa la secuencia 8." },
+      { tier: "bronce", nombre: "Dos en el mar", desc: "Completa la secuencia 9." },
+      { tier: "bronce", nombre: "Inquietantes esperanzas", desc: "Completa la secuencia 10." },
+      { tier: "bronce", nombre: "Fin difícil", desc: "Completa la secuencia 11." },
+      { tier: "oro", nombre: "La suma de la verdad", desc: "Completa la secuencia 12." },
+
+      { tier: "plata", nombre: "Perfeccionista", desc: "Completa el 100% de restricciones de todas las misiones principales." },
+      { tier: "bronce", nombre: "Un hombre extraordinario", desc: "Completa la Enciclopedia del hombre corriente." },
+      { tier: "bronce", nombre: "Patente para uso personal", desc: "Elabora una de las invenciones de Franklin para decorar tu casa." },
+      { tier: "bronce", nombre: "Venid a mi casa", desc: "Recluta a cualquier artesano y haz que se establezca en la hacienda." },
+      { tier: "bronce", nombre: "Estamos todos", desc: "Encárgate de que todos los personajes opcionales se establezcan en la hacienda." },
+      { tier: "bronce", nombre: "Jugador original", desc: "Gana una partida de fanorona, molino y bocha en la hacienda." },
+      { tier: "bronce", nombre: "Pisando fuerte en el fuerte", desc: "Explora el fuerte Wolcott." },
+      { tier: "bronce", nombre: "Kidd de supervivencia", desc: "Descubre el misterio de la isla del Roble." },
+      { tier: "plata", nombre: "Al mar en tiempos revueltos", desc: "Completa todas las misiones navales a bordo de la Aquila." },
+      { tier: "bronce", nombre: "¡Emprendedor, no pirata!", desc: "Completa los 12 contratos de corso." },
+      { tier: "bronce", nombre: "Mi barco es mi castillo", desc: "Mejora la Aquila." },
+      { tier: "bronce", nombre: "Solo para invitados", desc: "Sé invitado a unirte a un club." },
+      { tier: "bronce", nombre: "Reputado y cumplidor", desc: "Completa todos los desafíos de alguno de los clubs." },
+      { tier: "bronce", nombre: "Un hombre del pueblo", desc: "Libera todos los distritos de Boston o de Nueva York." },
+      { tier: "bronce", nombre: "Monopolista", desc: "Envía una caravana a Boston, Nueva York y la frontera." },
+      { tier: "bronce", nombre: "Ha perdido los papeles", desc: "Recupera todas las páginas de uno de los almanaques de Ben Franklin." },
+      { tier: "plata", nombre: "Completista", desc: "Completa todas las entradas del panel del medidor de progreso." },
+      { tier: "bronce", nombre: "Multitarea", desc: "Completa el 50% de las entradas del medidor de progreso." },
+
+      { tier: "bronce", nombre: "Trinchado y asado", desc: "Ejecuta un doble asesinato usando un mosquete." },
+      { tier: "bronce", nombre: "Espectáculo de circo", desc: "Mata a 15 guardias con un solo disparo de cañón." },
+      { tier: "bronce", nombre: "Depredador", desc: "Cuelga a 5 enemigos con dardos de cuerda." },
+      { tier: "bronce", nombre: "El príncipe de los ladrones", desc: "Saquea una caravana sin matar a ninguno de sus guardias." },
+      { tier: "bronce", nombre: "Lo que tenga que pasar, pasará", desc: "Bloquea una línea de fuego 5 veces con un escudo humano." },
+      { tier: "bronce", nombre: "Diez fusiles esperan", desc: "Tras pasar a ser totalmente notorio, mata a 10 jägers antes de perder tu notoriedad." },
+      { tier: "bronce", nombre: "Magna cum laude", desc: "Haz que un aprendiz alcance el rango de Asesino." },
+      { tier: "bronce", nombre: "Coureur des bois", desc: "Intercambia pieles intactas en todos los colmados." },
+      { tier: "bronce", nombre: "Testigo presencial", desc: "Presencia la muerte de un enemigo a manos de un depredador." },
+
+      { tier: "plata", nombre: "The End", desc: "Completa todas las misiones de epílogo que se desbloquean tras los créditos finales." },
+
+      { tier: "bronce", nombre: "Conocido pero único", desc: "Recibe un regalo inesperado. (DLC La Tiranía del Rey Washington: La Infamia)." },
+      { tier: "bronce", nombre: "Un lobo con piel de cordero", desc: "Mata a 25 enemigos mientras usas el manto. (DLC La Infamia)." },
+      { tier: "plata", nombre: "Hombres de la frontera", desc: "Alcanza el 100% de sincronización en la frontera. (DLC La Infamia)." },
+      { tier: "bronce", nombre: "Revancha en West Point", desc: "Derrota a Benedict Arnold. (DLC La Infamia)." },
+
+      { tier: "bronce", nombre: "Pasajero frecuente", desc: "Usa el vuelo de águila para viajar 1 km. (DLC La Tiranía del Rey Washington: La Traición)." },
+      { tier: "plata", nombre: "El nuevo motín del té", desc: "Alcanza el 100% de sincronización en Boston. (DLC La Traición)." },
+      { tier: "bronce", nombre: "No lo vio venir", desc: "Derrota a Putnam. (DLC La Traición)." },
+
+      { tier: "bronce", nombre: "A zarpazo limpio", desc: "Mata a 125 enemigos usando la fuerza del oso. (DLC La Tiranía del Rey Washington: La Redención)." },
+      { tier: "plata", nombre: "Sí hay marcha en Nueva York", desc: "Alcanza el 100% de sincronización en Nueva York. (DLC La Redención)." },
+      { tier: "bronce", nombre: "Primero en los corazones", desc: "Derrota a George Washington. (DLC La Redención)." },
+    ],
+  },
+
+  {
     id: "devil-may-cry-hd",
     titulo: "Devil May Cry",
     saga: "Devil May Cry",
