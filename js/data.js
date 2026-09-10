@@ -1441,4 +1441,120 @@ const GAMES = [
       { tier: "oro", nombre: "Juicio de los caídos", desc: "Derrota a las nueve valquirias." },
     ],
   },
+
+  {
+    id: "assassins-creed-brotherhood",
+    titulo: "Assassin's Creed: Brotherhood",
+    saga: "Assassin's Creed",
+    anio: 2010,
+    plataformas: "PS3 · Xbox 360 · PC",
+    horasPlatino: 55,
+    dificultad: 6,
+    color: "#9c7a29",
+    resumen:
+      "Ezio Auditore reconstruye la Hermandad de asesinos en la Roma ocupada por César Borgia: derriba torres Borgia, recluta y entrena a sus propios asesinos y persigue al hijo del Papa hasta el final. A diferencia de Assassin's Creed II, aquí el platino SÍ exige el multijugador competitivo que estrenó la saga (10 de los 51 trofeos, incluido llegar al nivel 50); Ubisoft cerró los servidores oficiales de PS3, Xbox 360 y PC el 1 de octubre de 2022, así que hoy el platino es prácticamente inalcanzable salvo por servidores comunitarios no oficiales en PC.",
+    perdibles: [
+      {
+        nombre: "Polvo al polvo",
+        razon:
+          "Solo se puede encontrar el artefacto saliendo del Animus y explorando el piso franco en el año 2012, algo que deja de estar disponible en cuanto completas la secuencia de ADN 8. Si avanzas la historia sin haberlo hecho antes, pierdes el trofeo para siempre en esa partida.",
+      },
+      {
+        nombre: "Tienes un email",
+        razon:
+          "Igual que 'Polvo al polvo', hay que salir del Animus y revisar el correo de Desmond en el año 2012 antes de terminar la secuencia de ADN 8. Pasado ese punto de la historia ya no se puede volver a esa sección del presente en la misma partida.",
+      },
+    ],
+    guias: [
+      {
+        trofeos: ["La toma de la bandera"],
+        titulo: "Ubicación de las 101 banderas Borgia",
+        descripcion:
+          "Son 101 estandartes rojos con el escudo de los Borgia repartidos por los cinco distritos de Roma (Centro, Antico, Campagna, Vaticano y los santuarios de Rómulo). Se destruyen simplemente tocándolos al pasar cerca; no hace falta hacerlo todo en una sola sesión, el contador se guarda en las estadísticas del juego. Por lo numerosas que son, lo más práctico es apoyarse en un mapa interactivo en vez de una lista de texto.",
+        enlace: {
+          texto: "Ver mapa interactivo con las 101 banderas en MapGenie",
+          url: "https://mapgenie.io/assassins-creed-brotherhood/maps/italy",
+        },
+      },
+      {
+        trofeos: ["...- .. ...- ---"],
+        titulo: "Ubicación de los 10 glifos (acertijos del Sujeto 16)",
+        descripcion:
+          "Hay 10 glifos escondidos en lo alto de edificios y monumentos de Roma, visibles con la Vista de Águila. Cada uno lanza uno de los acertijos del Sujeto 16 sobre la verdadera naturaleza del Animus; resolverlos todos desbloquea el vídeo final y el trofeo.",
+        enlace: {
+          texto: "Ver mapa interactivo con los 10 glifos en MapGenie",
+          url: "https://mapgenie.io/assassins-creed-brotherhood/maps/italy",
+        },
+      },
+      {
+        trofeos: ["En memoria"],
+        titulo: "Ubicación de las 10 plumas",
+        descripcion:
+          "Son 10 plumas en memoria de Petruccio Auditore, escondidas en tejados y rincones altos de Roma. Se recogen automáticamente al pasar cerca; conviene haber completado ya la historia para tener acceso a todas las zonas de la ciudad antes de ir a por ellas.",
+        enlace: {
+          texto: "Ver mapa interactivo con las 10 plumas en MapGenie",
+          url: "https://mapgenie.io/assassins-creed-brotherhood/maps/italy",
+        },
+      },
+    ],
+    trofeos: [
+      { tier: "platino", nombre: "El César", desc: "Conseguir todos los demás trofeos de Assassin's Creed: Brotherhood." },
+
+      { tier: "bronce", nombre: "Problemas técnicos", desc: "Intentar acceder a la secuencia 9 de ADN por primera vez." },
+      { tier: "plata", nombre: "Heridas de batalla", desc: "Completar la secuencia 1 de ADN." },
+      { tier: "bronce", nombre: "¡Santuario, santuario!", desc: "Buscar un lugar seguro donde esconderse y volver a entrar en el Animus." },
+      { tier: "plata", nombre: "Roma en ruinas", desc: "Completar la secuencia 2 de ADN." },
+      { tier: "plata", nombre: "Arreglando las cosas", desc: "Completar la secuencia 3 de ADN." },
+      { tier: "plata", nombre: "Princesa de otro castillo", desc: "Completar la secuencia 4 de ADN." },
+      { tier: "plata", nombre: "Recogiendo fondos", desc: "Completar la secuencia 5 de ADN." },
+      { tier: "plata", nombre: "Olvídate de París", desc: "Completar la secuencia 6 de ADN." },
+      { tier: "plata", nombre: "Domingo sangriento", desc: "Completar la secuencia 7 de ADN." },
+      { tier: "plata", nombre: "Victoria para los Asesinos", desc: "Completar la secuencia 8 de ADN." },
+      { tier: "bronce", nombre: "Descansa en paz", desc: "Completar la secuencia 9 de ADN." },
+      { tier: "oro", nombre: "Un cuchillo en el corazón", desc: "Conseguir el Fruto del Edén." },
+
+      { tier: "bronce", nombre: "Recuerdo completo", desc: "Lograr el 100% de sincronización en una secuencia que no sea la secuencia 1." },
+      { tier: "bronce", nombre: "Esto ya lo he visto", desc: "Repetir una memoria." },
+
+      { tier: "bronce", nombre: "En la boca del lobo", desc: "Descubrir el santuario en las catacumbas de Roma." },
+      { tier: "bronce", nombre: "El chico de oro", desc: "Descubrir el santuario en las Termas de Trajano." },
+      { tier: "plata", nombre: "Gladiador", desc: "Descubrir el santuario en el Coliseo." },
+      { tier: "plata", nombre: "El fontanero", desc: "Descubrir el santuario en la Cloaca Máxima." },
+      { tier: "plata", nombre: "Un equipo que falla", desc: "Descubrir el santuario en el Palacio de Letrán." },
+      { tier: "plata", nombre: "Amén", desc: "Descubrir el santuario en la Basílica de San Pedro." },
+
+      { tier: "bronce", nombre: "Ingenio infernal", desc: "Destruir la ametralladora." },
+      { tier: "bronce", nombre: "¡Al agua!", desc: "Destruir el cañón naval." },
+      { tier: "bronce", nombre: "¡A cubierto!", desc: "Destruir el bombardero." },
+      { tier: "bronce", nombre: "¡Para, soooo!", desc: "Destruir el carro blindado." },
+
+      { tier: "bronce", nombre: "Reformas en casa", desc: "Renovar 5 edificios en el barrio antiguo." },
+      { tier: "bronce", nombre: "Peón contra torre", desc: "Quemar todas las torres Borgia." },
+      { tier: "bronce", nombre: "Demostrar lo que vales", desc: "Completar 10 retos de los gremios." },
+      { tier: "plata", nombre: "...- .. ...- ---", desc: "Resolver todos los puzles del Sujeto 16." },
+      { tier: "bronce", nombre: "Perfeccionista", desc: "Ganar 3 medallas de oro en el programa de entrenamiento virtual del Animus." },
+      { tier: "bronce", nombre: "Hermandad", desc: "Reclutar a 3 Asesinos." },
+      { tier: "bronce", nombre: "Bienvenido a la Hermandad", desc: "Entrenar a un discípulo para que llegue al rango de Asesino." },
+      { tier: "bronce", nombre: "La toma de la bandera", desc: "Retirar todos los estandartes Borgia de Roma." },
+      { tier: "bronce", nombre: "En memoria", desc: "Recoger todas las plumas." },
+      { tier: "bronce", nombre: "Polvo al polvo", desc: "Encontrar un artefacto en el año 2012." },
+      { tier: "bronce", nombre: "Asesino en serie", desc: "Hacer una racha de ejecución de 10 asesinatos." },
+      { tier: "bronce", nombre: "Limpieza de primavera", desc: "Matar a un guardia con una escoba." },
+      { tier: "bronce", nombre: "Tus deseos son órdenes", desc: "Lanzar dinero en un pozo." },
+      { tier: "bronce", nombre: "Como un águila", desc: "Saltar en paracaídas desde lo alto del castillo de San Ángelo." },
+      { tier: "bronce", nombre: "Ponte los guantes", desc: "Ganar la mayor apuesta en las luchas." },
+      { tier: "bronce", nombre: "Tienes un email", desc: "Acceder a tu correo en el año 2012." },
+
+      { tier: "bronce", nombre: "Sincronizando", desc: "Completar una sesión entera con al menos un asesinato (solo multijugador)." },
+      { tier: "bronce", nombre: "Una aguja en un pajar", desc: "Matar a tu objetivo mientras estás escondido en un fardo de paja (solo multijugador)." },
+      { tier: "bronce", nombre: "Por los pelos", desc: "Ponerse en cabeza 10 segundos antes del final de la sesión y ganarla (solo multijugador)." },
+      { tier: "bronce", nombre: "Espabilando que es gerundio", desc: "Matar a tu objetivo y escapar de tu perseguidor en menos de 10 segundos (solo multijugador)." },
+      { tier: "plata", nombre: "Un trabajo bien hecho", desc: "En un conflicto abierto, matar a tu objetivo y escapar (solo multijugador)." },
+      { tier: "plata", nombre: "Descarga completada", desc: "Llegar al nivel 50 (solo multijugador)." },
+      { tier: "bronce", nombre: "Un modelo a seguir", desc: "Conseguir todos los bonus cooperativos en una sesión (solo multijugador)." },
+      { tier: "bronce", nombre: "Te has pasado", desc: "Ganar 750 puntos o más en un solo asesinato (solo multijugador)." },
+      { tier: "bronce", nombre: "Empleado de Abstergo del mes", desc: "Conseguir cada bonus al menos una vez (solo multijugador)." },
+      { tier: "bronce", nombre: "Pasarse siete pueblos", desc: "Hacer una doble o triple huida (solo multijugador)." },
+    ],
+  },
 ];
