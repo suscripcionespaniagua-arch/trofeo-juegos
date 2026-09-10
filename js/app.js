@@ -2,6 +2,7 @@ const TIER_LABEL = { bronce: "Bronce", plata: "Plata", oro: "Oro", platino: "Pla
 const TIER_ORDER = ["platino", "oro", "plata", "bronce"];
 const TIER_ICON = { bronce: "🥉", plata: "🥈", oro: "🥇", platino: "🏆" };
 const PROGRESS_PREFIX = "trofeos-platino:progress:";
+const HIDDEN_KEY = "trofeos-platino:hidden";
 
 function countByTier(trofeos) {
   const counts = { bronce: 0, plata: 0, oro: 0, platino: 0 };
@@ -28,11 +29,34 @@ function saveObtained(gameId, obtainedSet) {
   }
 }
 
+// Juegos que el usuario ya platinó y quitó de su lista principal (también solo en este navegador).
+function getHidden() {
+  try {
+    const raw = localStorage.getItem(HIDDEN_KEY);
+    return raw ? new Set(JSON.parse(raw)) : new Set();
+  } catch (e) {
+    return new Set();
+  }
+}
+
+function saveHidden(hiddenSet) {
+  try {
+    localStorage.setItem(HIDDEN_KEY, JSON.stringify([...hiddenSet]));
+  } catch (e) {
+    // localStorage no disponible: el juego reaparecerá en la lista la próxima vez.
+  }
+}
+
 function renderGamesGrid() {
   const grid = document.getElementById("games-grid");
   if (!grid) return;
+  grid.innerHTML = "";
 
-  GAMES.forEach((game) => {
+  const hidden = getHidden();
+  const visibleGames = GAMES.filter((game) => !hidden.has(game.id));
+  const hiddenGames = GAMES.filter((game) => hidden.has(game.id));
+
+  visibleGames.forEach((game) => {
     const counts = countByTier(game.trofeos);
     const obtained = getObtained(game.id);
     const obtainedCount = game.trofeos.filter((t) => obtained.has(t.nombre)).length;
@@ -57,6 +81,7 @@ function renderGamesGrid() {
           <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
           <span class="progress-label">${obtainedCount}/${game.trofeos.length}</span>
         </div>
+        <button type="button" class="platinum-btn" data-game-id="${game.id}">🏆 Ya lo platiné · quitar de la lista</button>
       </div>
     `;
     grid.appendChild(card);
@@ -66,6 +91,62 @@ function renderGamesGrid() {
   placeholder.className = "game-card-empty";
   placeholder.textContent = "Más juegos próximamente…";
   grid.appendChild(placeholder);
+
+  grid.querySelectorAll(".platinum-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (!confirm('¿Quitar este juego de tu lista? Podrás recuperarlo luego desde "Juegos platinados".')) return;
+      const h = getHidden();
+      h.add(btn.dataset.gameId);
+      saveHidden(h);
+      renderGamesGrid();
+    });
+  });
+
+  renderHiddenSection(hiddenGames);
+}
+
+function renderHiddenSection(hiddenGames) {
+  const old = document.getElementById("hidden-games-section");
+  if (old) old.remove();
+  if (hiddenGames.length === 0) return;
+
+  const section = document.createElement("div");
+  section.id = "hidden-games-section";
+  section.className = "hidden-games-section";
+  section.innerHTML = `
+    <button type="button" class="hidden-toggle-btn">🏆 Juegos platinados (${hiddenGames.length}) — mostrar</button>
+    <div class="hidden-games-list" hidden>
+      ${hiddenGames
+        .map(
+          (g) => `
+        <div class="hidden-game-row">
+          <span>${g.titulo}</span>
+          <button type="button" class="restore-btn" data-game-id="${g.id}">↩️ Restaurar a la lista</button>
+        </div>
+      `
+        )
+        .join("")}
+    </div>
+  `;
+  document.getElementById("games-grid").insertAdjacentElement("afterend", section);
+
+  const toggleBtn = section.querySelector(".hidden-toggle-btn");
+  const listEl = section.querySelector(".hidden-games-list");
+  toggleBtn.addEventListener("click", () => {
+    listEl.hidden = !listEl.hidden;
+    toggleBtn.textContent = `🏆 Juegos platinados (${hiddenGames.length}) — ${listEl.hidden ? "mostrar" : "ocultar"}`;
+  });
+
+  section.querySelectorAll(".restore-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const h = getHidden();
+      h.delete(btn.dataset.gameId);
+      saveHidden(h);
+      renderGamesGrid();
+    });
+  });
 }
 
 function renderGamePage() {

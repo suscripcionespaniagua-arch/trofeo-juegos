@@ -204,6 +204,72 @@ main {
 .pill.oro .dot { background: var(--oro); }
 .pill.platino .dot { background: var(--platino); }
 
+.platinum-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+.platinum-btn:hover {
+  border-color: var(--oro);
+  color: var(--oro);
+}
+
+.hidden-games-section {
+  margin-top: 18px;
+}
+.hidden-toggle-btn {
+  background: transparent;
+  border: 1px dashed var(--border);
+  color: var(--text-dim);
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-size: 0.84rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+.hidden-toggle-btn:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+.hidden-games-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hidden-game-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.86rem;
+}
+.restore-btn {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.restore-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .game-card-empty {
   border: 1px dashed var(--border);
   border-radius: var(--radius);
